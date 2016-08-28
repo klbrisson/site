@@ -1,5 +1,7 @@
 <div>
     <div *ngFor="let e of events">
-        <app-event [event]="e"></app-event>
+        <span class="timelineTick" (click)="selectEvent(e.id)" [hidden]="selectedId == e.id">○</span>
+        <span class="timelineTick" (click)="selectEvent(e.id)" [hidden]="selectedId != e.id">●</span>
+        <app-event [event]="e" [hidden]="selectedId != e.id"></app-event>
     </div>
 </div>
