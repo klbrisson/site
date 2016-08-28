@@ -1,0 +1,24 @@
+@charset "UTF-8";
+.timeline {
+  position: absolute;
+  bottom: 30px;
+  width: 80%;
+  text-align: center;
+  border-top: 1px solid #000; }
+
+.timelineTick {
+  display: inline-block;
+  position: absolute;
+  margin-left: -12px;
+  top: -16px;
+  font-size: 24px;
+  cursor: pointer; }
+  .timelineTick span:after {
+    content: "●"; }
+  .timelineTick.selected, .timelineTick:hover {
+    color: blue;
+    font-size: 30px;
+    top: -19px;
+    margin-left: -14px; }
+
+/*# sourceMappingURL=timeline.component.css.map */

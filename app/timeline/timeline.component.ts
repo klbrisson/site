@@ -1,34 +1,44 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
-import { EventComponent } from './event.component';
-import { EventService } from './event.service'
+import { TimelinePointComponent, TimelinePointService, TimelinePoint } from './';
 
 @Component({
     moduleId: module.id,
     selector: 'app-timeline',
     templateUrl: 'timeline.component.html',
-    directives: [EventComponent]
+    styleUrls: ['../resources/css/timeline/timeline.component.css'],
+    directives: [TimelinePointComponent]
 })
 export class TimelineComponent implements OnInit {
-    events: any[];
+    points: TimelinePoint[];
     selectedId: number;
+    height: number;
 
-    constructor(private _eventService: EventService) { }
+    constructor(private pointService: TimelinePointService) { }
 
     ngOnInit() { 
-        this._eventService.getEvents()
-          .then((events) => this.events = events.sort(this.sortByDate))
-          .catch((err) => {
-            console.log(err);
-          });
+        this.pointService.getPoints()
+          .subscribe((points) => this.points = points.sort(this.sortByDate));
     }
 
     selectEvent(id: number) {
         this.selectedId = id;
     }
 
-    private sortByDate(eventA: any, eventB: any) {
-        return eventA.date > eventB.date;
+    @HostListener('window:resize', ['$event']) onResize(event: any) {
+        this.height = event.target.innerHeight;
+    }
+
+    private generatePointPosition(date: Date) {
+        var points = this.points,
+            oldest = points[0].date.getTime(),
+            newest = points[points.length - 1].date.getTime(),
+            adjusted = date.getTime() - oldest;
+        return adjusted/(newest - oldest) * 100;
+    }
+
+    private sortByDate(eventA: TimelinePoint, eventB: TimelinePoint) : number {
+        return eventA.date.getTime() - eventB.date.getTime();
     }
 
 }

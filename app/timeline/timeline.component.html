@@ -1,7 +1,8 @@
-<div>
-    <div *ngFor="let e of events">
-        <span class="timelineTick" (click)="selectEvent(e.id)" [hidden]="selectedId == e.id">○</span>
-        <span class="timelineTick" (click)="selectEvent(e.id)" [hidden]="selectedId != e.id">●</span>
-        <app-event [event]="e" [hidden]="selectedId != e.id"></app-event>
+<div class="timelineContent" *ngFor="let point of points" [style.height]="height">
+    <app-event [point]="point" [hidden]="selectedId != point.id"></app-event>
+</div>
+<div class="timeline">
+    <div class="timelineTick" *ngFor="let point of points" [ngClass]="{selected: selectedId == point.id}" [style.left]="generatePointPosition(point.date) + '%'">
+        <span (click)="selectEvent(point.id)"></span>
     </div>
 </div>

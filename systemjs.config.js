@@ -20,6 +20,10 @@
     'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' },
   };
 
+  var appPackages = [
+    'timeline'
+  ];
+
   var ngPackageNames = [
     'common',
     'compiler',
@@ -43,11 +47,17 @@
     packages['@angular/'+pkgName] = { main: '/bundles/' + pkgName + '.umd.js', defaultExtension: 'js' };
   }
 
+  function packAppIndex(pkgName) {
+    packages['app/'+pkgName] = { main: 'index.js', defaultExtension: 'js' };
+  }
+
   // Most environments should use UMD; some (Karma) need the individual index files
   var setPackageConfig = System.packageWithIndex ? packIndex : packUmd;
 
   // Add package entries for angular packages
   ngPackageNames.forEach(setPackageConfig);
+
+  appPackages.forEach(packAppIndex);
 
   // No umd for router yet
   packages['@angular/router'] = { main: 'index.js', defaultExtension: 'js' };
