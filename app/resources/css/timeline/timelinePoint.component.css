@@ -1,7 +1,14 @@
 .timelinePoint {
-  height: 100%; }
-  .timelinePoint img {
+  padding: 20px;
+  height: 100%;
+  color: #fff; }
+  .timelinePoint .imgContainer {
     float: left;
-    height: 80%; }
+    padding: 0 20px 20px 20px;
+    width: 50%; }
+  .timelinePoint img {
+    width: 100%; }
+  .timelinePoint h2 {
+    margin-top: 0; }
 
 /*# sourceMappingURL=timelinePoint.component.css.map */

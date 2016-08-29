@@ -12,7 +12,6 @@ import { TimelinePointComponent, TimelinePointService, TimelinePoint } from './'
 export class TimelineComponent implements OnInit {
     points: TimelinePoint[];
     selectedId: number;
-    height: number;
 
     constructor(private pointService: TimelinePointService) { }
 
@@ -25,9 +24,7 @@ export class TimelineComponent implements OnInit {
         this.selectedId = id;
     }
 
-    @HostListener('window:resize', ['$event']) onResize(event: any) {
-        this.height = event.target.innerHeight;
-    }
+
 
     private generatePointPosition(date: Date) {
         var points = this.points,

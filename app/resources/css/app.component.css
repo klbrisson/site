@@ -1,6 +1,13 @@
-.container {
-  width: 80%;
+.mainContainer {
+  background-image: url("app/resources/images/blue-linen.png"); }
+
+.appContainer {
+  width: 90%;
+  max-width: 1300px;
   margin: 0 auto;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  position: relative;
+  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.6); }
 
 /*# sourceMappingURL=app.component.css.map */
