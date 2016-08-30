@@ -1,20 +1,19 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import { TimelineComponent, TimelinePointService } from './timeline/';
-import { NavComponent } from './nav/nav.component';
+import { TimelinePointService, APP_COMPONENTS } from './components';
 
 @Component({
     moduleId: module.id,
-    selector: 'my-app',
+    selector: 'tl-app',
     templateUrl: 'app.component.html',
     styleUrls: ['resources/css/app.component.css'],
-    directives: [TimelineComponent, NavComponent],
+    directives: [APP_COMPONENTS],
     providers: [TimelinePointService]
 })
 
 export class AppComponent implements OnInit {
-    //height: number;
+    // height: number;
 
-    ngOnInit() { 
+    ngOnInit() {
        // this.onResize();
     }
 

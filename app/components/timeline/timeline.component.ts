@@ -4,9 +4,9 @@ import { TimelinePointComponent, TimelinePointService, TimelinePoint } from './'
 
 @Component({
     moduleId: module.id,
-    selector: 'app-timeline',
+    selector: 'tl-timeline',
     templateUrl: 'timeline.component.html',
-    styleUrls: ['../resources/css/timeline/timeline.component.css'],
+    styleUrls: ['../../resources/css/timeline/timeline.component.css'],
     directives: [TimelinePointComponent]
 })
 export class TimelineComponent implements OnInit {
@@ -29,10 +29,10 @@ export class TimelineComponent implements OnInit {
             oldest = points[0].date.getTime(),
             newest = points[points.length - 1].date.getTime(),
             adjusted = date.getTime() - oldest;
-        return adjusted/(newest - oldest) * 100;
+        return adjusted / (newest - oldest) * 100;
     }
 
-    private sortByDate(eventA: TimelinePoint, eventB: TimelinePoint) : number {
+    private sortByDate(eventA: TimelinePoint, eventB: TimelinePoint): number {
         return eventA.date.getTime() - eventB.date.getTime();
     }
 

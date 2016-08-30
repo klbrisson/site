@@ -21,7 +21,8 @@
   };
 
   var appPackages = [
-    'timeline'
+    'components',
+    'components/timeline'
   ];
 
   var ngPackageNames = [
