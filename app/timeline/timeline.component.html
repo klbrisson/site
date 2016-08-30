@@ -1,10 +1,5 @@
-<div class="timelineContent" *ngFor="let point of points">
-    <app-event [point]="point" [hidden]="selectedId != point.id"></app-event>
-</div>
 <div class="timeline">
     <div class="line">
-        <div class="timelineTick" *ngFor="let point of points" [ngClass]="{selected: selectedId == point.id}" [style.left]="generatePointPosition(point.date) + '%'">
-            <span (click)="selectEvent(point.id)"></span>
-        </div>
     </div>
+    <app-event *ngFor="let point of points; let isEven = even;" [point]="point" [isEven]="isEven"></app-event>
 </div>

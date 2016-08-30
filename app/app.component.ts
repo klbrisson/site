@@ -12,13 +12,13 @@ import { NavComponent } from './nav/nav.component';
 })
 
 export class AppComponent implements OnInit {
-    height: number;
+    //height: number;
 
     ngOnInit() { 
-        this.onResize();
+       // this.onResize();
     }
 
-    @HostListener('window:resize', ['$event']) onResize() {
-        this.height = window.innerHeight - 50;
-    }
+    // @HostListener('window:resize', ['$event']) onResize() {
+    //     this.height = window.innerHeight - 50;
+    // }
 }

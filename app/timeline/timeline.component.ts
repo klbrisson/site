@@ -24,8 +24,6 @@ export class TimelineComponent implements OnInit {
         this.selectedId = id;
     }
 
-
-
     private generatePointPosition(date: Date) {
         var points = this.points,
             oldest = points[0].date.getTime(),
