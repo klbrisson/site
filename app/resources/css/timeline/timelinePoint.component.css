@@ -1,6 +1,7 @@
 .timelinePoint {
   position: relative;
-  display: table; }
+  display: table;
+  width: 100%; }
   .timelinePoint .imgContainer {
     text-align: right;
     vertical-align: middle;

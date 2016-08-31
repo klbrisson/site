@@ -1,34 +1,210 @@
 [
     {
         "id": 1,
-        "author": "Author/Company author",
-        "title": "Title of page italicized",
-        "date": "date",
-        "url": "http:// (as much as can be used to retrieve the page)",
+        "author": "Computer History Museum",
+        "title": "Timeline of Computer History",
+        "date": "2016",
+        "url": "http://www.computerhistory.org/timeline/computers/",
         "type": "internet"
     },
     {
         "id": 2,
-        "author": "Author/Company author",
-        "title": "Title of page italicized",
-        "date": "date",
-        "url": "http:// (as much as can be used to retrieve the page)",
+        "author": "StatCoutner",
+        "title": "StatCounter GlobalStats",
+        "date": "2016",
+        "url": "http://gs.statcounter.com/#desktop-browser-ww-weekly-201501-201627",
         "type": "internet"
     },
     {
         "id": 3,
-        "author": "Author/Company author",
-        "title": "Title of page italicized",
-        "date": "date",
-        "url": "http:// (as much as can be used to retrieve the page)",
+        "author": "Kelly, H.",
+        "title": "5 ways the iPhone changed our lives",
+        "date": "2012, June 30",
+        "url": "http://www.cnn.com/2012/06/28/tech/mobile/iphone-5-years-anniversary/",
         "type": "internet"
     },
     {
         "id": 4,
-        "author": "Author/Company author",
-        "title": "Title of page italicized",
-        "date": "date",
-        "url": "http:// (as much as can be used to retrieve the page)",
+        "author": "The Telegraph",
+        "title": "How YouTube changed the world",
+        "date": "2015, February 9",
+        "url": "http://s.telegraph.co.uk/graphics/projects/youtube/",
+        "type": "internet"
+    },
+    {
+        "id": 5,
+        "author": "Billington, J.",
+        "title": "YouTube's millionaires: 10 highest earning users revealed as PewDiePie takes top spot with $12m a year",
+        "date": "2015, October 16",
+        "url": "http://www.ibtimes.co.uk/youtubes-millionaires-top-10-highest-earning-users-revealed-pewdiepie-taking-top-spot-12m-1524384",
+        "type": "internet"
+    },
+    {
+        "id": 6,
+        "author": "John, Circuits Today",
+        "title": "Story and History of Development of Arduino",
+        "date": "2014, March 2016",
+        "url": "http://www.circuitstoday.com/story-and-history-of-development-of-arduino",
+        "type": "internet"
+    },
+    {
+        "id": 7,
+        "author": "The Suit",
+        "title": "Wireless Revolution: The History of WiFi",
+        "date": "2014, July 17",
+        "url": "http://www.thesuitmagazine.com/technology/web-a-internet/22360-wireless-revolution-the-history-of-wifi.html",
+        "type": "internet"
+    },
+    {
+        "id": 8,
+        "author": "Mozilla",
+        "title": "History of the Mozilla Project",
+        "date": "n.d.",
+        "url": "https://www.mozilla.org/en-US/about/history/details/",
+        "type": "internet"
+    },
+    {
+        "id": 9,
+        "author": "Google",
+        "title": "Our history in depth",
+        "date": "n.d.",
+        "url": "https://www.google.com/about/company/history/",
+        "type": "internet"
+    },
+    {
+        "id": 10,
+        "author": "Poppick, S.",
+        "title": "10 Ways Google Has Changed the World",
+        "date": "2014, August 18",
+        "url": "http://time.com/money/3117377/google-10-ways-changed-world/",
+        "type": "internet"
+    },
+    {
+        "id": 11,
+        "author": "Choney, S.",
+        "title": "No Googling, says Google — unless you really mean it",
+        "date": "2013, March 26",
+        "url": "http://www.nbcnews.com/tech/internet/no-googling-says-google-unless-you-really-mean-it-f1C9078566",
+        "type": "internet"
+    },
+    {
+        "id": 12,
+        "author": "Longman, A. W.",
+        "title": "A history of HTML",
+        "date": "19998",
+        "url": "https://www.w3.org/People/Raggett/book4/ch02.html",
+        "type": "internet"
+    },
+    {
+        "id": 13,
+        "author": "Davidson, J.",
+        "title": "Here’s How Many Internet Users There Are",
+        "date": "2015, May 26",
+        "url": "http://time.com/money/3896219/internet-users-worldwide/",
+        "type": "internet"
+    },
+    {
+        "id": 14,
+        "author": "Kim, E.",
+        "title": "Internet’s oldest dot-com address still exists - and it’s turning 30 on Sunday",
+        "date": "2015, March 14",
+        "url": "http://www.businessinsider.com/symbolics-the-first-dot-com-domain-name-registered-2015-3",
+        "type": "internet"
+    },
+    {
+        "id": 15,
+        "author": "Encyclopædia Britannica",
+        "title": "Windows OS",
+        "date": "2015, November 16",
+        "url": "https://www.britannica.com/technology/Windows-OS",
+        "type": "internet"
+    },
+    {
+        "id": 16,
+        "author": "Mac History",
+        "title": "Apple Lisa",
+        "date": "n.d.",
+        "url": "http://www.mac-history.net/apple-history-2/apple-lisa/2007-10-12/apple-lisa",
+        "type": "internet"
+    },
+    {
+        "id": 17,
+        "author": "IBM",
+        "title": "The birth of the IBM PC",
+        "date": "n.d.",
+        "url": "https://www-03.ibm.com/ibm/history/exhibits/pc25/pc25_birth.html",
+        "type": "internet"
+    },
+    {
+        "id": 18,
+        "author": "The WordStar Resource Site",
+        "title": "A Potted History of WordStar",
+        "date": "n.d.",
+        "url": "http://www.wordstar.org/index.php/wordstar-history",
+        "type": "internet"
+    },
+    {
+        "id": 19,
+        "author": "Roblyer, M.D., Doering A. H.",
+        "title": "The Impact of Word Processing in Education",
+        "date": "2010, July 20",
+        "url": "http://www.education.com/reference/article/impact-word-processing-education/ ",
+        "type": "internet"
+    },
+    {
+        "id": 20,
+        "author": "Mac History",
+        "title": "Apple II",
+        "date": "n.d.",
+        "url": "http://www.mac-history.net/apple-history-2/apple-ii/2008-05-25/apple-ii",
+        "type": "internet"
+    },
+    {
+        "id": 21,
+        "author": "Mac History",
+        "title": "Apple I",
+        "date": "n.d.",
+        "url": "http://www.mac-history.net/apple-history-2/apple-i/2012-07-08/apple-i",
+        "type": "internet"
+    },
+    {
+        "id": 22,
+        "author": "The Open Group",
+        "title": "History and Timeline",
+        "date": "n.d.",
+        "url": "http://www.unix.org/what_is_unix/history_timeline.html",
+        "type": "internet"
+    },
+    {
+        "id": 23,
+        "author": "Dan's Tools",
+        "title": "Epoch Unix Time Stamp Converter",
+        "date": "n.d.",
+        "url": "http://www.unixtimestamp.com/index.php",
+        "type": "internet"
+    },
+    {
+        "id": 24,
+        "author": "Edwards, B.",
+        "title": "Looking back at OS X's origins",
+        "date": "2010, September 13",
+        "url": "http://www.macworld.com/article/1154036/software-utilities/osxorigins.html",
+        "type": "internet"
+    },
+    {
+        "id": 25,
+        "author": "ScienCentral, Inc., The American Institute of Physics",
+        "title": "Integrated Circuits",
+        "date": "1999",
+        "url": "http://www.pbs.org/transistor/background1/events/icinv.html",
+        "type": "internet"
+    },
+    {
+        "id": 26,
+        "author": "Zimmerman, K. A.",
+        "title": "History of Computers: A Brief Timeline",
+        "date": "2015, September 8",
+        "url": "http://www.livescience.com/20718-computer-history.html",
         "type": "internet"
     }
 ]

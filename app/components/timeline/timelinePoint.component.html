@@ -1,10 +1,21 @@
-<div class="timelinePoint clearfix" [ngClass]="{even: isEven}" *ngIf="isEven">
+<div class="timelinePoint" [ngClass]="{even: isEven}" *ngIf="isEven">
     <div class="timelineTick">{{point.year}}</div>
     <div class="timelineTextContainer">
         <div class="timelineText">
             <h2>{{point.title}}</h2>
             <p class="summary">{{point.summary}}</p>
         </div>
+        <!--<div>
+            <h2>References</h2>
+            <div *ngFor="let refId of point.referenceIds; let reference = getReferenceById(refId);">
+                <div>
+                    <span>{{reference.author}}.</span>
+                    <span>({{reference.date}}).</span>
+                    <span class="tl-ref-title">{{reference.title}}.</span>
+                </div>
+                <span class="tl-ref-location">Retrieved from {{reference.url}}</span>
+            </div>
+        </div>-->
     </div>
     <div class="imgContainer">
         <div>

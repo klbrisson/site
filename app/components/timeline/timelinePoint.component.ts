@@ -5,7 +5,7 @@ import { TimelinePoint } from './';
     moduleId: module.id,
     selector: 'tl-event',
     templateUrl: 'timelinePoint.component.html',
-    styleUrls: ['../../resources/css/timeline/timelinePoint.component.css']
+    styleUrls: ['../../resources/css/timeline/timelinePoint.component.css', '../../resources/css/references/references.component.css']
 })
 export class TimelinePointComponent implements OnInit {
     @Input() point: TimelinePoint;

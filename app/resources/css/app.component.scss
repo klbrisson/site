@@ -11,18 +11,4 @@
     margin: 0 auto;
     font-family: sans-serif;
     position: relative;
-    //background-color: rgba(0,0,0,0.6);
 }
-
-.clearfix:after {
-     visibility: hidden;
-     display: block;
-     font-size: 0;
-     content: " ";
-     clear: both;
-     height: 0;
-     }
-.clearfix { display: inline-block; }
-/* start commented backslash hack \*/
-* html .clearfix { height: 1%; }
-.clearfix { display: block; }
