@@ -16,7 +16,8 @@
       border-radius: 50%;
       border: 3px solid black; }
   .timelinePoint img {
-    height: 100%; }
+    max-height: 100%;
+    max-width: 100%; }
   .timelinePoint .timelineTextContainer {
     display: table-cell;
     vertical-align: middle;
@@ -129,16 +130,16 @@
   border-left-color: #FC931B;
   border-right-color: transparent; }
 .timelinePoint.tl-point--pink h2 {
-  color: #D9484C; }
+  color: #D94F69; }
 .timelinePoint.tl-point--pink .timelineTick {
-  background-color: #D9484C; }
+  background-color: #D94F69; }
 .timelinePoint.tl-point--pink .timelineText,
 .timelinePoint.tl-point--pink .imgContainer div {
-  border-color: #D9484C; }
+  border-color: #D94F69; }
 .timelinePoint.tl-point--pink .timelineText:before {
-  border-right-color: #D9484C; }
+  border-right-color: #D94F69; }
 .timelinePoint.tl-point--pink.even .timelineText:before {
-  border-left-color: #D9484C;
+  border-left-color: #D94F69;
   border-right-color: transparent; }
 .timelinePoint.tl-point--green h2 {
   color: #97D15A; }
