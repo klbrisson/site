@@ -1,53 +1,132 @@
 .timelinePoint {
     position: relative;
-    //height: 100%;
-    //color: #fff;
+    display: table;
     
     .imgContainer {
-      //  padding: 0 20px 20px 20px;
-        padding: 30px;
-        float: left;
-        width: 50%;
-        max-height: 100%;
         text-align: right;
-    }
-    
-    .timelineText {
-        padding: 30px;
+        vertical-align: middle;
+        display: table-cell;
+        padding: 50px;
         width: 50%;
-        display: inline-block;
+
+        div {
+            display: inline-block;
+            height: 250px;
+            width: 250px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 2px solid black;
+        }
+    }
+    img {
+        height: 100%;
+    }
+
+    .timelineTextContainer {
+        display: table-cell;
+        vertical-align: middle;
+        position: relative;
+        padding: 50px;
+        width: 50%;
         min-height: 300px;
     }
 
-    img {
-        max-height: 100%;
-        max-width: 100%;
+    .timelineText {
+        background-color: white;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 10px;
     }
+
+    .timelineText {
+        position: relative;
+        background: #fff;
+        border: 2px solid #000;
+    }
+    .timelineText:after, .timelineText:before {
+        right: 100%;
+        top: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    .timelineText:after {
+        border-color: rgba(255, 255, 255, 0);
+        border-right-color: #fff;
+        border-width: 15px;
+        margin-top: -15px;
+    }
+    .timelineText:before {
+        border-color: rgba(0, 0, 0, 0);
+        border-right-color: #000;
+        border-width: 18px;
+        margin-top: -18px;
+    }
+    
 
     h2 {
         margin-top: 0;
     }
 
     .timelineTick {
+        z-index: 2;
         position: absolute;
         cursor: pointer;
         left: 50%;
-        margin-left: -15px;
-        margin-top: -15px;
+        margin-left: -25px;
+        margin-top: -25px;
         top: 50%;
-        width: 30px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         border: 2px solid black;
         overflow: hidden;
-        background-color: #000;
+        background-color: #FFF;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 18px;
+        font-weight: bold;
     }
 
     &.even {
         .imgContainer {
             text-align: left;
-            float: right;
         }
+        
+    .timelineText {
+        position: relative;
+        background: #fff;
+        border: 2px solid #000;
+    }
+    .timelineText:after, .timelineText:before {
+        left: 100%;
+        top: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    .timelineText:after {
+        border-color: rgba(255, 255, 255, 0);
+        border-left-color: #fff;
+        border-width: 15px;
+        margin-top: -15px;
+    }
+    .timelineText:before {
+        border-color: rgba(0, 0, 0, 0);
+        border-left-color: #000;
+        border-width: 18px;
+        margin-top: -18px;
+    }
+            
+       
     }
 }
 

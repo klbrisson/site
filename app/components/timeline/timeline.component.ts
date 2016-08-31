@@ -24,16 +24,8 @@ export class TimelineComponent implements OnInit {
         this.selectedId = id;
     }
 
-    private generatePointPosition(date: Date) {
-        var points = this.points,
-            oldest = points[0].date.getTime(),
-            newest = points[points.length - 1].date.getTime(),
-            adjusted = date.getTime() - oldest;
-        return adjusted / (newest - oldest) * 100;
-    }
-
     private sortByDate(eventA: TimelinePoint, eventB: TimelinePoint): number {
-        return eventA.date.getTime() - eventB.date.getTime();
+        return eventA.year - eventB.year;
     }
 
 }

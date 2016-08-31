@@ -1,28 +1,28 @@
 [
     {
         "id": 1,
-        "date": "08/28/2016",
+        "year": 2015,
         "title": "Test event",
         "imgUrl": "app/resources/images/adorbs1.jpg",
         "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu velit eu leo sagittis dictum ac vel libero. Vestibulum scelerisque ante eu commodo pharetra. Proin rhoncus iaculis urna, vitae vulputate dolor sagittis ac. In convallis eros consequat porttitor consequat. Vivamus fringilla massa quis arcu malesuada, quis lacinia lorem tristique. Vivamus et odio vitae urna dapibus tincidunt. Duis condimentum, quam ac accumsan accumsan, felis nisi fermentum urna, sed ornare nisi nibh non lorem. Vivamus semper ex ut arcu efficitur, vel suscipit dui faucibus. In fermentum, nunc id pellentesque venenatis, tortor nisi facilisis nisl, quis volutpat purus enim ut leo. Mauris varius, augue eu cursus porta, sem magna condimentum libero, non eleifend elit metus at sem. Vestibulum scelerisque elit magna, facilisis mattis nulla semper vitae."
     },
     {
         "id": 2,
-        "date": "08/30/2016",
+        "year": 2016,
         "title": "Test event 2",
         "imgUrl": "app/resources/images/adorbs2.jpg",
-        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu velit eu leo sagittis dictum ac vel libero. Vestibulum scelerisque ante eu commodo pharetra. Proin rhoncus iaculis urna, vitae vulputate dolor sagittis ac. In convallis eros consequat porttitor consequat. Vivamus fringilla massa quis arcu malesuada, quis lacinia lorem tristique. Vivamus et odio vitae urna dapibus tincidunt. Duis condimentum, quam ac accumsan accumsan, felis nisi fermentum urna, sed ornare nisi nibh non lorem. Vivamus semper ex ut arcu efficitur, vel suscipit dui faucibus. In fermentum, nunc id pellentesque venenatis, tortor nisi facilisis nisl, quis volutpat purus enim ut leo. Mauris varius, augue eu cursus porta, sem magna condimentum libero, non eleifend elit metus at sem. Vestibulum scelerisque elit magna, facilisis mattis nulla semper vitae."
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu velit eu leo sagittis dictum ac vel libero. Vestibulum scelerisque ante eu commodo pharetra. Proin rhoncus iaculis urna, vitae vulputate dolor sagittis ac. In convallis eros consequat porttitor consequat. "
     },
     {
         "id": 3,
-        "date": "03/10/2016",
+        "year": 2016,
         "title": "Test event 3",
         "imgUrl": "app/resources/images/adorbs3.jpg",
-        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu velit eu leo sagittis dictum ac vel libero. Vestibulum scelerisque ante eu commodo pharetra. Proin rhoncus iaculis urna, vitae vulputate dolor sagittis ac. In convallis eros consequat porttitor consequat. Vivamus fringilla massa quis arcu malesuada, quis lacinia lorem tristique. Vivamus et odio vitae urna dapibus tincidunt. Duis condimentum, quam ac accumsan accumsan, felis nisi fermentum urna, sed ornare nisi nibh non lorem. Vivamus semper ex ut arcu efficitur, vel suscipit dui faucibus. In fermentum, nunc id pellentesque venenatis, tortor nisi facilisis nisl, quis volutpat purus enim ut leo. Mauris varius, augue eu cursus porta, sem magna condimentum libero, non eleifend elit metus at sem. Vestibulum scelerisque elit magna, facilisis mattis nulla semper vitae."
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu velit eu leo sagittis dictum ac vel libero. Vestibulum scelerisque ante eu commodo pharetra. Proin rhoncus iaculis urna, vitae vulputate dolor sagittis ac. In convallis eros consequat porttitor consequat. Vivamus fringilla massa quis arcu malesuada, quis lacinia lorem tristique. Vivamus et odio vitae urna dapibus tincidunt. Duis condimentum, quam ac accumsan accumsan, felis nisi fermentum urna, sed ornare nisi nibh non lorem. Vivamus semper ex ut arcu efficitur, vel suscipit dui faucibus. In fermentum, nunc id pellentesque venenatis, tortor nisi facilisis nisl, quis volutpat purus enim ut leo. Mauris varius, augue eu cursus porta, sem magna condimentum libero, non eleifend elit metus at sem. Vestibulum scelerisque elit magna, facilisis mattis nulla semper vitae. In fermentum, nunc id pellentesque venenatis, tortor nisi facilisis nisl, quis volutpat purus enim ut leo. Mauris varius, augue eu cursus porta, sem magna condimentum libero, non eleifend elit metus at sem. Vestibulum scelerisque elit magna, facilisis mattis nulla semper vitae."
     },
     {
         "id": 4,
-        "date": "10/01/2016",
+        "year": 2013,
         "title": "Test event 4",
         "imgUrl": "app/resources/images/adorbs4.jpg",
         "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu velit eu leo sagittis dictum ac vel libero. Vestibulum scelerisque ante eu commodo pharetra. Proin rhoncus iaculis urna, vitae vulputate dolor sagittis ac. In convallis eros consequat porttitor consequat. Vivamus fringilla massa quis arcu malesuada, quis lacinia lorem tristique. Vivamus et odio vitae urna dapibus tincidunt. Duis condimentum, quam ac accumsan accumsan, felis nisi fermentum urna, sed ornare nisi nibh non lorem. Vivamus semper ex ut arcu efficitur, vel suscipit dui faucibus. In fermentum, nunc id pellentesque venenatis, tortor nisi facilisis nisl, quis volutpat purus enim ut leo. Mauris varius, augue eu cursus porta, sem magna condimentum libero, non eleifend elit metus at sem. Vestibulum scelerisque elit magna, facilisis mattis nulla semper vitae."

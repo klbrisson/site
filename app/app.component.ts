@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import { TimelinePointService, APP_COMPONENTS } from './components';
+import { TimelinePointService, ReferencesService, APP_COMPONENTS } from './components';
 
 @Component({
     moduleId: module.id,
@@ -7,17 +7,7 @@ import { TimelinePointService, APP_COMPONENTS } from './components';
     templateUrl: 'app.component.html',
     styleUrls: ['resources/css/app.component.css'],
     directives: [APP_COMPONENTS],
-    providers: [TimelinePointService]
+    providers: [TimelinePointService, ReferencesService]
 })
 
-export class AppComponent implements OnInit {
-    // height: number;
-
-    ngOnInit() {
-       // this.onResize();
-    }
-
-    // @HostListener('window:resize', ['$event']) onResize() {
-    //     this.height = window.innerHeight - 50;
-    // }
-}
+export class AppComponent { }

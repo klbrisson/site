@@ -1,10 +1,29 @@
-<div class="timelinePoint" [ngClass]="{even: isEven}">
-    <!--
----><div class="timelineTick"></div><!--
----><div class="timelineText">
-        <h2>{{point.date}} {{point.title}}</h2>
-        <p class="summary">{{point.summary}}</p>
-    </div><div class="imgContainer">
-        <img src="{{point.imgUrl}}">
+<div class="timelinePoint clearfix" [ngClass]="{even: isEven}" *ngIf="isEven">
+    <div class="timelineTick">{{point.year}}</div>
+    <div class="timelineTextContainer">
+        <div class="timelineText">
+            <h2>{{point.title}}</h2>
+            <p class="summary">{{point.summary}}</p>
+        </div>
+    </div>
+    <div class="imgContainer">
+        <div>
+            <img src="{{point.imgUrl}}">
+        </div>
+    </div>
+</div>
+
+<div class="timelinePoint clearfix" [ngClass]="{even: isEven}" *ngIf="!isEven">
+    <div class="timelineTick">{{point.year}}</div>
+    <div class="imgContainer">
+        <div>
+            <img src="{{point.imgUrl}}">
+        </div>
+    </div>
+    <div class="timelineTextContainer">
+        <div class="timelineText">
+            <h2>{{point.title}}</h2>
+            <p class="summary">{{point.summary}}</p>
+        </div>
     </div>
 </div>

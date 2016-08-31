@@ -1,6 +1,6 @@
 export * from './timeline';
 export * from './nav/nav.component';
-export * from './references/references.component';
+export * from './references';
 
 import { TimelineComponent, NavComponent, ReferencesComponent } from './';
 

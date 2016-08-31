@@ -22,7 +22,8 @@
 
   var appPackages = [
     'components',
-    'components/timeline'
+    'components/timeline',
+    'components/references'
   ];
 
   var ngPackageNames = [

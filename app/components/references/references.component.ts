@@ -1,12 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ReferencesService, Reference } from './';
+
 @Component({
     moduleId: module.id,
     selector: 'tl-references',
-    templateUrl: 'references.component.html'
+    templateUrl: 'references.component.html',
+        styleUrls: ['../../resources/css/references/references.component.css']
 })
 export class ReferencesComponent implements OnInit {
-    constructor() { }
+    references: Reference[];
 
-    ngOnInit() { }
+    constructor(private referencesService: ReferencesService) { }
+
+    ngOnInit() { 
+        this.referencesService.getReferences()
+          .subscribe((references) => this.references = references);
+    }
 }

@@ -1,7 +1,8 @@
 export class TimelinePoint {
     id: number;
-    date: Date;
+    year: number;
     title: string;
     summary: string;
     imgUrl: string;
+    referenceId: number;
 }

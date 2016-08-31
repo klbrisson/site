@@ -1,36 +1,100 @@
 .timelinePoint {
-  position: relative; }
+  position: relative;
+  display: table; }
   .timelinePoint .imgContainer {
-    padding: 30px;
-    float: left;
-    width: 50%;
-    max-height: 100%;
-    text-align: right; }
-  .timelinePoint .timelineText {
-    padding: 30px;
-    width: 50%;
-    display: inline-block;
-    min-height: 300px; }
+    text-align: right;
+    vertical-align: middle;
+    display: table-cell;
+    padding: 50px;
+    width: 50%; }
+    .timelinePoint .imgContainer div {
+      display: inline-block;
+      height: 250px;
+      width: 250px;
+      overflow: hidden;
+      border-radius: 50%;
+      border: 2px solid black; }
   .timelinePoint img {
-    max-height: 100%;
-    max-width: 100%; }
+    height: 100%; }
+  .timelinePoint .timelineTextContainer {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    padding: 50px;
+    width: 50%;
+    min-height: 300px; }
+  .timelinePoint .timelineText {
+    background-color: white;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px; }
+  .timelinePoint .timelineText {
+    position: relative;
+    background: #fff;
+    border: 2px solid #000; }
+  .timelinePoint .timelineText:after, .timelinePoint .timelineText:before {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none; }
+  .timelinePoint .timelineText:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #fff;
+    border-width: 15px;
+    margin-top: -15px; }
+  .timelinePoint .timelineText:before {
+    border-color: transparent;
+    border-right-color: #000;
+    border-width: 18px;
+    margin-top: -18px; }
   .timelinePoint h2 {
     margin-top: 0; }
   .timelinePoint .timelineTick {
+    z-index: 2;
     position: absolute;
     cursor: pointer;
     left: 50%;
-    margin-left: -15px;
-    margin-top: -15px;
+    margin-left: -25px;
+    margin-top: -25px;
     top: 50%;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     border: 2px solid black;
     overflow: hidden;
-    background-color: #000; }
+    background-color: #FFF;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold; }
   .timelinePoint.even .imgContainer {
-    text-align: left;
-    float: right; }
+    text-align: left; }
+  .timelinePoint.even .timelineText {
+    position: relative;
+    background: #fff;
+    border: 2px solid #000; }
+  .timelinePoint.even .timelineText:after, .timelinePoint.even .timelineText:before {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none; }
+  .timelinePoint.even .timelineText:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-left-color: #fff;
+    border-width: 15px;
+    margin-top: -15px; }
+  .timelinePoint.even .timelineText:before {
+    border-color: transparent;
+    border-left-color: #000;
+    border-width: 18px;
+    margin-top: -18px; }
 
 /*# sourceMappingURL=timelinePoint.component.css.map */

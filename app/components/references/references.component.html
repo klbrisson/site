@@ -1,3 +1,19 @@
-<div>
-    <h1>MY GOD THESE ARE THE REFERENCES YOU DESIRE</h1>
+<h1>References</h1>
+<div *ngFor="let reference of references;">
+    <div *ngIf="reference.type == 'internet'" class="tl-ref">
+        <div>
+            <span>{{reference.author}}.</span>
+            <span>({{reference.date}}).</span>
+            <span class="tl-ref-title">{{reference.title}}.</span>
+        </div>
+        <span class="tl-ref-location">Retrieved from {{reference.url}}</span>
+    </div>
+    <div *ngIf="reference.type == 'book'" class="tl-ref">
+        <div>
+            <span>{{reference.lastName}}, {{reference.firstInitial}}.</span>
+            <span>({{reference.date}}).</span>
+            <span class="tl-ref-title">{{reference.title}}.</span>
+        </div>
+        <span class="tl-ref-location">{{reference.location}}: {{reference.publisher}}</span>
+    </div>
 </div>

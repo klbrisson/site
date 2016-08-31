@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "author": "Author/Company author",
+        "title": "Title of page italicized",
+        "date": "date",
+        "url": "http:// (as much as can be used to retrieve the page)",
+        "type": "internet"
+    },
+    {
+        "id": 2,
+        "author": "Author/Company author",
+        "title": "Title of page italicized",
+        "date": "date",
+        "url": "http:// (as much as can be used to retrieve the page)",
+        "type": "internet"
+    },
+    {
+        "id": 3,
+        "author": "Author/Company author",
+        "title": "Title of page italicized",
+        "date": "date",
+        "url": "http:// (as much as can be used to retrieve the page)",
+        "type": "internet"
+    },
+    {
+        "id": 4,
+        "author": "Author/Company author",
+        "title": "Title of page italicized",
+        "date": "date",
+        "url": "http:// (as much as can be used to retrieve the page)",
+        "type": "internet"
+    }
+]

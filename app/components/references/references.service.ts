@@ -1,16 +1,16 @@
 import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
-import { TimelinePoint } from './';
+import { Reference } from './';
 import { Observable } from 'rxjs';
 
-const URL_EVENT = 'timelinePoints.json';
+const URL_EVENT = 'timelineReferences.json';
 
 @Injectable()
-export class TimelinePointService {
+export class ReferencesService {
     
     constructor(private http: Http) { }
 
-    getPoints(): Observable<TimelinePoint[]> {
+    getReferences(): Observable<Reference[]> {
         return this.http.get(URL_EVENT)
             .map((resp: Response) => resp.json());
     }
