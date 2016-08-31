@@ -13,6 +13,7 @@ import { ReferencesService, Reference } from '../references';
 export class TimelineComponent implements OnInit {
     points: TimelinePoint[];
     references: { };
+    colors = ['tl-point--teal', 'tl-point--yellow', 'tl-point--orange', 'tl-point--pink', 'tl-point--green'];
 
     constructor(private pointService: TimelinePointService, private referencesService: ReferencesService) { }
 
@@ -26,6 +27,22 @@ export class TimelineComponent implements OnInit {
 
     getReferenceById(id: number): Reference {
         return this.references[id] != null ? this.references[id] : null;
+    }
+
+    getColor(index: number): string {
+        var length = this.colors.length;
+        if (index != null) {
+            if (index < length) {
+                return this.colors[index];
+            } else {
+                var i = index;
+                while (i >= length) {
+                    i = i - length;
+                }
+                return this.colors[i];
+            }
+        }
+        return null;
     }
 
     private generateReferenceDictionary(references: Reference[]) {

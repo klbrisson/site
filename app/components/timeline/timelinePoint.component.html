@@ -1,4 +1,4 @@
-<div class="timelinePoint" [ngClass]="{even: isEven}" *ngIf="isEven">
+<div class="timelinePoint {{color}}" [ngClass]="{even: isEven}" *ngIf="isEven">
     <div class="timelineTick">{{point.year}}</div>
     <div class="timelineTextContainer">
         <div class="timelineText">
@@ -24,7 +24,7 @@
     </div>
 </div>
 
-<div class="timelinePoint clearfix" [ngClass]="{even: isEven}" *ngIf="!isEven">
+<div class="timelinePoint {{color}}" [ngClass]="{even: isEven}" *ngIf="!isEven">
     <div class="timelineTick">{{point.year}}</div>
     <div class="imgContainer">
         <div>

@@ -10,6 +10,7 @@ import { TimelinePoint } from './';
 export class TimelinePointComponent implements OnInit {
     @Input() point: TimelinePoint;
     @Input() isEven: boolean;
+    @Input() color: string;
     
     ngOnInit() { }
 }

@@ -1,5 +1,5 @@
 <div class="timeline">
     <div class="line">
     </div>
-    <tl-event *ngFor="let point of points; let isEven = even;" [point]="point" [isEven]="isEven"></tl-event>
+    <tl-event *ngFor="let point of points; let isEven = even; let index = index;" [point]="point" [isEven]="isEven" [color]="getColor(index)" ></tl-event>
 </div>

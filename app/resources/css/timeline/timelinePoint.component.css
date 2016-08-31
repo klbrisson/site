@@ -14,7 +14,7 @@
       width: 250px;
       overflow: hidden;
       border-radius: 50%;
-      border: 2px solid black; }
+      border: 3px solid black; }
   .timelinePoint img {
     height: 100%; }
   .timelinePoint .timelineTextContainer {
@@ -25,14 +25,11 @@
     width: 50%;
     min-height: 300px; }
   .timelinePoint .timelineText {
+    position: relative;
     background-color: white;
     padding: 10px;
-    border: 2px solid black;
+    border: 3px solid black;
     border-radius: 10px; }
-  .timelinePoint .timelineText {
-    position: relative;
-    background: #fff;
-    border: 2px solid #000; }
   .timelinePoint .timelineText:after, .timelinePoint .timelineText:before {
     right: 100%;
     top: 50%;
@@ -50,11 +47,14 @@
   .timelinePoint .timelineText:before {
     border-color: transparent;
     border-right-color: #000;
-    border-width: 18px;
-    margin-top: -18px; }
+    border-width: 19px;
+    margin-top: -19px; }
   .timelinePoint h2 {
-    margin-top: 0; }
+    margin-top: 0;
+    font-weight: bold; }
   .timelinePoint .timelineTick {
+    line-height: 30px;
+    color: #fff;
     z-index: 2;
     position: absolute;
     cursor: pointer;
@@ -65,19 +65,13 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 2px solid black;
     overflow: hidden;
-    background-color: #FFF;
     text-align: center;
     padding: 10px 0;
     font-size: 18px;
     font-weight: bold; }
   .timelinePoint.even .imgContainer {
     text-align: left; }
-  .timelinePoint.even .timelineText {
-    position: relative;
-    background: #fff;
-    border: 2px solid #000; }
   .timelinePoint.even .timelineText:after, .timelinePoint.even .timelineText:before {
     left: 100%;
     top: 50%;
@@ -95,7 +89,68 @@
   .timelinePoint.even .timelineText:before {
     border-color: transparent;
     border-left-color: #000;
-    border-width: 18px;
-    margin-top: -18px; }
+    border-width: 19px;
+    margin-top: -19px; }
+
+.timelinePoint.tl-point--teal h2 {
+  color: #08B491; }
+.timelinePoint.tl-point--teal .timelineTick {
+  background-color: #08B491; }
+.timelinePoint.tl-point--teal .timelineText,
+.timelinePoint.tl-point--teal .imgContainer div {
+  border-color: #08B491; }
+.timelinePoint.tl-point--teal .timelineText:before {
+  border-right-color: #08B491; }
+.timelinePoint.tl-point--teal.even .timelineText:before {
+  border-left-color: #08B491;
+  border-right-color: transparent; }
+.timelinePoint.tl-point--yellow h2 {
+  color: #FCE14F; }
+.timelinePoint.tl-point--yellow .timelineTick {
+  background-color: #FCE14F; }
+.timelinePoint.tl-point--yellow .timelineText,
+.timelinePoint.tl-point--yellow .imgContainer div {
+  border-color: #FCE14F; }
+.timelinePoint.tl-point--yellow .timelineText:before {
+  border-right-color: #FCE14F; }
+.timelinePoint.tl-point--yellow.even .timelineText:before {
+  border-left-color: #FCE14F;
+  border-right-color: transparent; }
+.timelinePoint.tl-point--orange h2 {
+  color: #FC931B; }
+.timelinePoint.tl-point--orange .timelineTick {
+  background-color: #FC931B; }
+.timelinePoint.tl-point--orange .timelineText,
+.timelinePoint.tl-point--orange .imgContainer div {
+  border-color: #FC931B; }
+.timelinePoint.tl-point--orange .timelineText:before {
+  border-right-color: #FC931B; }
+.timelinePoint.tl-point--orange.even .timelineText:before {
+  border-left-color: #FC931B;
+  border-right-color: transparent; }
+.timelinePoint.tl-point--pink h2 {
+  color: #D9484C; }
+.timelinePoint.tl-point--pink .timelineTick {
+  background-color: #D9484C; }
+.timelinePoint.tl-point--pink .timelineText,
+.timelinePoint.tl-point--pink .imgContainer div {
+  border-color: #D9484C; }
+.timelinePoint.tl-point--pink .timelineText:before {
+  border-right-color: #D9484C; }
+.timelinePoint.tl-point--pink.even .timelineText:before {
+  border-left-color: #D9484C;
+  border-right-color: transparent; }
+.timelinePoint.tl-point--green h2 {
+  color: #97D15A; }
+.timelinePoint.tl-point--green .timelineTick {
+  background-color: #97D15A; }
+.timelinePoint.tl-point--green .timelineText,
+.timelinePoint.tl-point--green .imgContainer div {
+  border-color: #97D15A; }
+.timelinePoint.tl-point--green .timelineText:before {
+  border-right-color: #97D15A; }
+.timelinePoint.tl-point--green.even .timelineText:before {
+  border-left-color: #97D15A;
+  border-right-color: transparent; }
 
 /*# sourceMappingURL=timelinePoint.component.css.map */
