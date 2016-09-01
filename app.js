@@ -31,7 +31,7 @@ app.get('/', function(req, res) {
 })
 
 app.get('/references', function(req, res) {
-    res.render('index')
+    res.render('../index')
 })
 
 
