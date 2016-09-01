@@ -10,5 +10,5 @@ const serveStaticFile   = (_, response) => { response.sendFile(indexFile); }
 const logServerMessage  = () => { console.log(`Express server listening on port ${serverPort}`) }
 
 server.use(baseDirectory);
-server.get('*', serveStaticFile);
+server.get('/', serveStaticFile);
 server.listen(serverPort, logServerMessage);
