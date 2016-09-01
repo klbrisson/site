@@ -26,8 +26,11 @@ app.use(express.static(path.join(__dirname, '')));
 app.use(express.static(path.join(__dirname, 'app')));
 
 
-//app.use('/users', users);
 app.get('/', function(req, res) {
+    res.render('index')
+})
+
+app.get('/references', function(req, res) {
     res.render('index')
 })
 
