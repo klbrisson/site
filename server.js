@@ -11,5 +11,5 @@ const logServerMessage  = () => { console.log(`Express server listening on port 
 
 server.use(baseDirectory);
 server.use(express.static(baseDirectoryPath + '/app'));
-server.get('*', serveStaticFile);
+server.get('/', serveStaticFile);
 server.listen(serverPort, logServerMessage);
