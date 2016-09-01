@@ -6,7 +6,7 @@
         "year": 2015,
         "title": "Apple Watch",
         "imgUrl": "app/resources/images/apple-watch.jpg",
-        "summary": "The Apple watch came out in 2015."
+        "summary": "The Apple watch came out in 2015, continuing with the increasing trend of wearable electronics. Devices such as smart watches allow people even more connectivity and interaction with the internet and social media."
     },
     {
         "id": 2,
@@ -15,16 +15,16 @@
         "year": 2012,
         "title": "Raspberry Pi",
         "imgUrl": "app/resources/images/raspberry-pi.jpg",
-        "summary": ""
+        "summary": "The Raspberry Pi is similar to the Arduino. It is a small, inexpensive programmable board popular with hobbyists and students alike. Microcontrollers like the Arduino and Raspberry Pi are helping people learn more about computers and programming and allowing inventors to create prototypes of new devices with integrated computers."
     },
     {
         "id": 3,
-        "references": [],
+        "references": [49],
         "imageReference": 46,
         "year": 2010,
         "title": "iPad",
         "imgUrl": "app/resources/images/ipad.jpg",
-        "summary": ""
+        "summary": "in 2010, Apple released the iPad. It became a big competitor to laptops and other portable computers. Since the iPad's release, many other companies have started developing their own tablets. Many tablets now come with removeable keyboards and other functions similar to laptops, causing laptop sales to decline. The introduction of tablets is changing society. Many companies are using them for business purposes. Restaurants, stores, and even pilots are using them."
     },
     {
         "id": 4,
@@ -51,7 +51,7 @@
         "year": 2007,
         "title": "iPhone",
         "imgUrl": "app/resources/images/iphone.jpg",
-        "summary": "The Apple iPhone came out in 2007. "
+        "summary": "The Apple iPhone came out in 2007. The iPhone was a phone unlike any others on the market at the time. The ease of use to browse the internet, view emails, and play games made it an extremely popular phone. Soon after, other companies started producing their own smart phones. Each generation of smart phones introduces new capabilities, such as gps, wi-fi calling, and even fingerprint scanners. It is not just the devices that have changed society, but also the apps created for them. Apps range from games and entertainment, to productivity and business software. These apps are changing the way we live and how we manage our lives. Both Android and iOS phones now include speech recognition functionality that is improving with each release, and we will be interacting more and more with technology via voice commands instead of physical inputs. And, this all started with the iPhone."
     },
     {
         "id": 7,
@@ -60,7 +60,7 @@
         "year": 2005,
         "title": "YouTube",
         "imgUrl": "app/resources/images/youtube.jpg",
-        "summary": "YouTube.com was created in 2005 as a video sharing site and in 2006 it was acquired by Google. YouTube is changing entertainment, communication, and advertising in society. Popular YouTube channels get enough revenue through advertising, that many people are now creating YouTube videos for their income and becoming a YouTuber as their profession. Some YouTubers are even making millions of dollars annually through ad revenue."
+        "summary": "YouTube.com was created in 2005 as a video sharing site and in 2006 it was acquired by Google. YouTube is changing entertainment, communication, and advertising in society. Popular YouTube channels get enough revenue through advertising, that many people are now creating YouTube videos for their income and becoming a YouTuber as their profession. Some YouTubers are even making millions of dollars annually through ad revenue. A similar service, Twitch.tv hosts live streams of people, usually playing video games. YouTube and Twitch are changing the entertainment business and introducing a new category of professions."
     },
     {
         "id": 8,
@@ -73,18 +73,19 @@
     },
     {
         "id": 9,
-        "references": [],
+        "references": [50],
+        "imageReference": 51,
         "year": 2003,
-        "title": "Opteron – first processor to support AMD64",
-        "imgUrl": "app/resources/images/adorbs4.jpg",
-        "summary": ""
+        "title": "Opteron Processor",
+        "imgUrl": "app/resources/images/opteron.jpg",
+        "summary": "AMD released the Opteron processor in 2003. The Opteron introduced personal computers to the world of 64-bit computing."
     },
     {
         "id": 10,
         "references": [],
         "year": 2001,
         "title": "OS X and Windows XP",
-        "imgUrl": "app/resources/images/adorbs4.jpg",
+        "imgUrl": "",
         "summary": ""
     },
     {
@@ -210,7 +211,7 @@
         "imageReference": 27,
         "year": 1958,
         "title": "Integrated Circuit",
-        "imgUrl": "app/resources/images/integrated-circuit.jpg",
+        "imgUrl": "app/resources/images/integrated-circuits.jpg",
         "summary": "In 1958, two people separately came up with the idea for creating integrated circuits on a single chip. These people were Jack Kilby at Texas Instruments and Robert Noyce working at the Fairchild Semiconductor company. The invention of integrated circuits made it possible to make smaller and cheaper computer components."
     }
 ]

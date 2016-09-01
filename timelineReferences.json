@@ -310,7 +310,7 @@
     {
         "id": 43,
         "subject": "Untitled photograph of an iPhone",
-        "url": "http://i.dailymail.co.uk/i/pix/2012/08/10/article-2186489-060A105B0000044D-337_237x234.jpg",
+        "url": "http://photos.appleinsidercdn.com/iphone-121218.png",
         "type": "image"
     },
     {
@@ -341,6 +341,28 @@
         "id": 48,
         "subject": "Untitled photograph of the Apple Watch",
         "url": "http://cdn2.macworld.co.uk/cmsdata/features/3609125/How_to_use_Apple_Watch_Activity_app_800home2.jpg",
+        "type": "image"
+    },
+    {
+        "id": 49,
+        "author": "Yarow, J.",
+        "title": "How The iPad Totally Changed The World In Just Three Years",
+        "date": "2013, April 3",
+        "url": "http://www.businessinsider.com/how-the-ipad-totally-changed-the-world-in-just-three-years-2013-4",
+        "type": "internet"
+    },
+    {
+        "id": 50,
+        "author": "Latif, L.",
+        "title": "AMD brought 64-bit to x86 10 years ago today",
+        "date": "2013, April 22",
+        "url": "http://www.theinquirer.net/inquirer/feature/2262881/amd-brought-64bit-to-x86-10-years-ago-today",
+        "type": "internet"
+    },
+    {
+        "id": 51,
+        "subject": "Untitled photograph of an AMD Opteron processor",
+        "url": "http://www.theinquirer.net/IMG/790/201790/amd-opteron-6200-series-580x358.jpg?1429982626",
         "type": "image"
     }
 ]
