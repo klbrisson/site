@@ -12,6 +12,7 @@ _test-output
 _temp
 .sass-cache
 
+!app.js
 !server.js
 !karma*.js
 !protractor*.js
