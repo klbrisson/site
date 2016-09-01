@@ -10,10 +10,6 @@ const serveStaticFile   = (_, response) => { response.sendFile(indexFile); }
 const logServerMessage  = () => { console.log(`Express server listening on port ${serverPort}`) }
 
 server.use(baseDirectory);
-
-server.use(express.static(__dirname + '/app'));
-
-server.get('/', serveStaticFile);
-
-
+server.use(express.static(baseDirectoryPath + '/app'));
+server.get('*', serveStaticFile);
 server.listen(serverPort, logServerMessage);
