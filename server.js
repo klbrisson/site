@@ -25,7 +25,12 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'app')));
 
-app.use('/users', users);
+app.get('/', function(req, res, next) {
+  res.json({
+    name: "John",
+    last: "Smith"
+  });
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
