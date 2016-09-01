@@ -1,6 +1,7 @@
 .timelinePoint {
     position: relative;
     display: table;
+    table-layout: fixed;
     width: 100%;
     
     .imgContainer {
@@ -32,6 +33,25 @@
         width: 50%;
         min-height: 300px;
     }
+    
+    .timelineReference {
+        display: none;
+        line-height: 24px;
+        overflow: auto;
+
+        .tl-ref {
+            margin-top: 20px;
+            
+            &-title {
+                font-style: italic;
+            }
+
+            &-location {
+                display: inline-block;
+                margin-left: 40px;
+            }
+        }
+    }
 
     .timelineText {
         position: relative;
@@ -39,6 +59,15 @@
         padding: 10px;
         border: 3px solid black;
         border-radius: 10px;
+
+        &:hover {
+            .timelineText-text {
+                display: none;
+            }
+            .timelineReference {
+                display: block;
+            }
+        }
     }
 
     .timelineText:after, .timelineText:before {
@@ -254,4 +283,6 @@
     }
 
 }
+
+
 

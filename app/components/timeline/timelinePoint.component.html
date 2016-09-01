@@ -2,20 +2,18 @@
     <div class="timelineTick">{{point.year}}</div>
     <div class="timelineTextContainer">
         <div class="timelineText">
-            <h2>{{point.title}}</h2>
-            <p class="summary">{{point.summary}}</p>
-        </div>
-        <!--<div>
-            <h2>References</h2>
-            <div *ngFor="let refId of point.referenceIds; let reference = getReferenceById(refId);">
-                <div>
-                    <span>{{reference.author}}.</span>
-                    <span>({{reference.date}}).</span>
-                    <span class="tl-ref-title">{{reference.title}}.</span>
-                </div>
-                <span class="tl-ref-location">Retrieved from {{reference.url}}</span>
+            <div class="timelineText-text">
+                <h2>{{point.title}}</h2>
+                <p class="summary">{{point.summary}}</p>
             </div>
-        </div>-->
+            <div class="timelineReference">
+                <h2>References</h2>
+                <div *ngFor="let refId of point.references;" >
+                    <tl-reference [refId]="refId"></tl-reference>
+                </div>
+                <tl-reference [refId]="point.imageReference"></tl-reference>
+            </div>
+        </div>
     </div>
     <div class="imgContainer">
         <div>
@@ -33,8 +31,17 @@
     </div>
     <div class="timelineTextContainer">
         <div class="timelineText">
-            <h2>{{point.title}}</h2>
-            <p class="summary">{{point.summary}}</p>
+            <div class="timelineText-text">
+                <h2>{{point.title}}</h2>
+                <p class="summary">{{point.summary}}</p>
+            </div>
+            <div class="timelineReference">
+                <h2>References</h2>
+                <div *ngFor="let refId of point.references;" >
+                    <tl-reference [refId]="refId"></tl-reference>
+                </div>
+                <tl-reference [refId]="point.imageReference"></tl-reference>
+            </div>
         </div>
     </div>
 </div>

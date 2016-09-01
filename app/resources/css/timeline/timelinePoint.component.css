@@ -1,6 +1,7 @@
 .timelinePoint {
   position: relative;
   display: table;
+  table-layout: fixed;
   width: 100%; }
   .timelinePoint .imgContainer {
     text-align: right;
@@ -25,12 +26,27 @@
     padding: 50px;
     width: 50%;
     min-height: 300px; }
+  .timelinePoint .timelineReference {
+    display: none;
+    line-height: 24px;
+    overflow: auto; }
+    .timelinePoint .timelineReference .tl-ref {
+      margin-top: 20px; }
+      .timelinePoint .timelineReference .tl-ref-title {
+        font-style: italic; }
+      .timelinePoint .timelineReference .tl-ref-location {
+        display: inline-block;
+        margin-left: 40px; }
   .timelinePoint .timelineText {
     position: relative;
     background-color: white;
     padding: 10px;
     border: 3px solid black;
     border-radius: 10px; }
+    .timelinePoint .timelineText:hover .timelineText-text {
+      display: none; }
+    .timelinePoint .timelineText:hover .timelineReference {
+      display: block; }
   .timelinePoint .timelineText:after, .timelinePoint .timelineText:before {
     right: 100%;
     top: 50%;
@@ -73,6 +89,27 @@
     font-weight: bold; }
   .timelinePoint.even .imgContainer {
     text-align: left; }
+  .timelinePoint.even .timelineReference {
+    display: none;
+    line-height: 24px;
+    overflow: auto; }
+    .timelinePoint.even .timelineReference .tl-ref {
+      margin-top: 20px; }
+      .timelinePoint.even .timelineReference .tl-ref-title {
+        font-style: italic; }
+      .timelinePoint.even .timelineReference .tl-ref-location {
+        display: inline-block;
+        margin-left: 40px; }
+  .timelinePoint.even .timelineText {
+    position: relative;
+    background-color: white;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 10px; }
+    .timelinePoint.even .timelineText:hover .timelineText-text {
+      display: none; }
+    .timelinePoint.even .timelineText:hover .timelineReference {
+      display: block; }
   .timelinePoint.even .timelineText:after, .timelinePoint.even .timelineText:before {
     left: 100%;
     top: 50%;

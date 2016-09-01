@@ -20,9 +20,6 @@ export class TimelineComponent implements OnInit {
     ngOnInit() { 
         this.pointService.getPoints()
           .subscribe((points) => this.points = points.sort(this.sortByDate));
-        
-        this.referencesService.getReferences()
-          .subscribe(this.generateReferenceDictionary);
     }
 
     getReferenceById(id: number): Reference {

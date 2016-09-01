@@ -16,4 +16,13 @@
         </div>
         <span class="tl-ref-location">{{reference.location}}: {{reference.publisher}}</span>
     </div>
+    <div *ngIf="reference.type == 'image'" class="tl-ref">
+        <div>
+            <span *ngIf="reference.author != null">{{reference.author}}.</span>
+            <span *ngIf="reference.date != null">({{reference.date}}).</span>
+            <span class="tl-ref-title" *ngIf="reference.title != null">{{reference.title}}.</span>
+            <span>[{{reference.subject}}]</span>
+        </div>
+        <span class="tl-ref-location">Retrieved from {{reference.url}}</span>
+    </div>
 </div>

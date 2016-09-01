@@ -4,5 +4,6 @@ export class TimelinePoint {
     title: string;
     summary: string;
     imgUrl: string;
-    referenceIds: number[];
+    references: number[];
+    imageReference: number;
 }
