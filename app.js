@@ -23,6 +23,8 @@ app.use(cookieParser());
 
 //app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, '')));
+app.use(express.static(path.join(__dirname, 'app')));
+
 
 //app.use('/users', users);
 app.get('/', function(req, res) {
