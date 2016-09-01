@@ -1,1 +1,1 @@
-web: node server.js
+web: node --es_staging server.js
