@@ -10,13 +10,14 @@
     </div>
     <div *ngIf="reference.type == 'book'" class="tl-ref">
         <div>
-            <span>{{reference.lastName}}, {{reference.firstInitial}}.</span>
+            <span>{{reference.author}}.</span>
             <span>({{reference.date}}).</span>
             <span class="tl-ref-title">{{reference.title}}.</span>
         </div>
         <span class="tl-ref-location">{{reference.location}}: {{reference.publisher}}</span>
     </div>
-    <div *ngIf="reference.type == 'image'" class="tl-ref">
+    
+    <!--<div *ngIf="reference.type == 'image'" class="tl-ref">
         <div>
             <span *ngIf="reference.author != null">{{reference.author}}.</span>
             <span *ngIf="reference.date != null">({{reference.date}}).</span>
@@ -24,5 +25,5 @@
             <span>[{{reference.subject}}]</span>
         </div>
         <span class="tl-ref-location">Retrieved from {{reference.url}}</span>
-    </div>
+    </div>-->
 </div>

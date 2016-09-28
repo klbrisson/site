@@ -118,6 +118,13 @@
         padding: 10px 0;
         font-size: 18px;
         font-weight: bold;
+
+        span {
+            font-size: 11px;
+            position: absolute;
+            top: 24px;
+            left: 13px;
+        }
     }
 
     &.even {

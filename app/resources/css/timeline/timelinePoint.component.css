@@ -87,6 +87,11 @@
     padding: 10px 0;
     font-size: 18px;
     font-weight: bold; }
+    .timelinePoint .timelineTick span {
+      font-size: 11px;
+      position: absolute;
+      top: 24px;
+      left: 13px; }
   .timelinePoint.even .imgContainer {
     text-align: left; }
   .timelinePoint.even .timelineText:after, .timelinePoint.even .timelineText:before {

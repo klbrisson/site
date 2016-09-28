@@ -19,7 +19,7 @@ export class TimelineComponent implements OnInit {
 
     ngOnInit() { 
         this.pointService.getPoints()
-          .subscribe((points) => this.points = points.sort(this.sortByDate));
+          .subscribe((points) => this.points = points.sort(this.sortById));
     }
 
     getReferenceById(id: number): Reference {
@@ -50,7 +50,15 @@ export class TimelineComponent implements OnInit {
         }
     }
 
+    private sortById(eventA: TimelinePoint, eventB: TimelinePoint): number {
+        return eventB.id - eventA.id;
+  }
+
     private sortByDate(eventA: TimelinePoint, eventB: TimelinePoint): number {
-        return eventB.year - eventA.year;
+        if (!eventB.year || !eventA.year) {
+            return 1;
+        } else {
+            return eventB.year - eventA.year;
+        }
     }
 }
