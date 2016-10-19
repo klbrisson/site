@@ -3,10 +3,12 @@
   background-color: #fff;
   font-size: 24px;
   color: #787878;
-  padding: 50px 0;
+  padding: 100px 0;
   text-align: center; }
+  @media (max-width: 800px) {
+    .projects {
+      padding: 50px 0; } }
   .projects h2 {
-    padding-top: 50px;
     display: inline-block;
     color: #4c6b7c;
     border-bottom: 3px solid #ffc95e;
@@ -15,5 +17,7 @@
     line-height: 45px; }
   .projects p {
     font-weight: 200; }
+  .projects a {
+    color: #ffc95e; }
 
 /*# sourceMappingURL=projects.component.css.map */

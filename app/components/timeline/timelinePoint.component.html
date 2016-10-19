@@ -16,36 +16,9 @@
             </div>
         </div>
     </div>
-    <div class="timelineTick" *ngIf="point.year != 470">{{point.year}}</div>
-    <!--<div class="timelineTick" *ngIf="point.year == 470">{{point.year}}<span>BCE</span></div>-->
     <div class="imgContainer">
         <div>
             <img src="{{point.imgUrl}}">
         </div>
     </div>
 </div>
-
-<!--<div class="timelinePoint {{color}}" [ngClass]="{even: isEven}" *ngIf="!isEven">
-    <div class="timelineTick" *ngIf="point.year != 470">{{point.year}}</div>
-    <div class="timelineTick" *ngIf="point.year == 470">{{point.year}}<span>BCE</span></div>
-    <div class="imgContainer">
-        <div>
-            <img src="{{point.imgUrl}}">
-        </div>
-    </div>
-    <div class="timelineTextContainer">
-        <div class="timelineText">
-            <div class="timelineText-text">
-                <h2>{{point.title}}</h2>
-                <p class="summary">{{point.summary}}</p>
-            </div>
-            <div class="timelineReference">
-                <h2>References</h2>
-                <div *ngFor="let refId of point.references;" >
-                    <tl-reference [refId]="refId"></tl-reference>
-                </div>
-                <tl-reference [refId]="point.imageReference"></tl-reference>
-            </div>
-        </div>
-    </div>
-</div>-->

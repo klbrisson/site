@@ -3,15 +3,18 @@
     background-color: #fff;
     font-size: 24px;
     color: #787878;
-    padding: 50px 0;
+    padding: 100px 0;
     text-align: center; 
-    
+
+    @media (max-width: 800px) {
+        padding: 50px 0;
+    }    
     .container {
         //height: 100%;
     }
 
     h2 {
-        padding-top: 50px;
+       // padding-top: 50px;
         display: inline-block;
         color: #4c6b7c;
         border-bottom: 3px solid #ffc95e;
