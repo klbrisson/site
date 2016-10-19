@@ -1,0 +1,12 @@
+.tech {
+  background-image: url("../../images/background.svg");
+  background-attachment: fixed;
+  text-align: center; }
+  .tech img {
+    height: 70px;
+    margin: 20px; }
+    @media (max-width: 400px) {
+      .tech img {
+        height: 50px; } }
+
+/*# sourceMappingURL=tech.component.css.map */

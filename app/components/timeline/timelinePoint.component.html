@@ -12,14 +12,14 @@
                 <div *ngFor="let refId of point.references;" >
                     <tl-reference [refId]="refId"></tl-reference>
                 </div>
-                <!--<tl-reference [refId]="point.imageReference"></tl-reference>-->
+                <tl-reference [refId]="point.imageReference"></tl-reference>
             </div>
         </div>
     </div>
     <div class="imgContainer">
-        <!--<div>
+        <div>
             <img src="{{point.imgUrl}}">
-        </div>-->
+        </div>
     </div>
 </div>
 
@@ -27,9 +27,9 @@
     <div class="timelineTick" *ngIf="point.year != 470">{{point.year}}</div>
     <div class="timelineTick" *ngIf="point.year == 470">{{point.year}}<span>BCE</span></div>
     <div class="imgContainer">
-        <!--<div>
+        <div>
             <img src="{{point.imgUrl}}">
-        </div>-->
+        </div>
     </div>
     <div class="timelineTextContainer">
         <div class="timelineText">
@@ -42,7 +42,7 @@
                 <div *ngFor="let refId of point.references;" >
                     <tl-reference [refId]="refId"></tl-reference>
                 </div>
-                <!--<tl-reference [refId]="point.imageReference"></tl-reference>-->
+                <tl-reference [refId]="point.imageReference"></tl-reference>
             </div>
         </div>
     </div>

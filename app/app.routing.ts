@@ -1,6 +1,6 @@
 import { Routes, RouterModule } from '@angular/router';
 
-import { TimelineComponent, ReferencesComponent } from './components';
+import { IndexComponent, TimelineComponent, ReferencesComponent } from './components';
 
 const routes: Routes = [
     {
@@ -8,9 +8,13 @@ const routes: Routes = [
         component: ReferencesComponent
     },
     {
-        path: '',
+        path: 'timeline',
         component: TimelineComponent
+    },
+    {
+        path: '',
+        component: IndexComponent
     }
 ];
 
-export const APP_ROUTING = RouterModule.forRoot(routes, {useHash: true});
+export const APP_ROUTING = RouterModule.forRoot(routes);

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,KAAM;EACF,gBAAgB,EAAE,kCAAkC;EACpD,qBAAqB,EAAE,KAAK;EAC5B,UAAU,EAAE,MAAM;EAElB,SAAI;IACA,MAAM,EAAE,IAAI;IACZ,MAAM,EAAE,IAAI;IAEZ,yBAA0B;MAJ9B,SAAI;QAKI,MAAM,EAAE,IAAI",
+"sources": ["tech.component.scss"],
+"names": [],
+"file": "tech.component.css"
+}

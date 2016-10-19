@@ -1,0 +1,15 @@
+.contact {
+  border-top: 1px solid #fff;
+  background-color: #26282c;
+  text-align: center; }
+
+.contact-link {
+  color: white;
+  font-size: 18px;
+  padding: 35px 15px;
+  display: inline-block; }
+  .contact-link a {
+    color: white;
+    text-decoration: none; }
+
+/*# sourceMappingURL=contact.component.css.map */

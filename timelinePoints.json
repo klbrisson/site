@@ -1,76 +1,200 @@
 [
     {
         "id": 1,
-        "references": [1],
-        "year": 470,
-        "title": "Socrates, Plato, and Aristotle",
-        "summary": "Socrates, Plato, and Aristotle were Greek philosophers who started thinking about psychology. Socrates beleived in dualism, the idea that our thoughts are separate from our bodies. Aristotle believed that we are not inherently born with knowledge, but rather, we gain knowledge through observing the world around us. Much later, from the 1500s to the 1800s, came Rene Descartes, John Locke, Thomas Hobbes, and Charles Darwin who all helped to advance psychology."
+        "references": [],
+        "imageReference": 48,
+        "year": 2015,
+        "title": "Apple Watch",
+        "imgUrl": "app/resources/images/apple-watch.jpg",
+        "summary": "The Apple watch came out in 2015, continuing with the increasing trend of wearable electronics. Devices such as smart watches allow people even more connectivity and interaction with the internet and social media."
     },
     {
         "id": 2,
         "references": [1],
-        "year": 1879,
-        "title": "First Psychological Laboratory",
-        "summary": "In 1879, Wilhelm Wundt founded the first psychological laboratory in Germany at the University of Leipzig, helping to advance psychology as a science. This laboratory helped produce many students who would then go on to other universities, spreading the science of psychology."
+        "imageReference": 47,
+        "year": 2012,
+        "title": "Raspberry Pi",
+        "imgUrl": "app/resources/images/raspberry-pi.jpg",
+        "summary": "The Raspberry Pi is similar to the Arduino. It is a small, inexpensive programmable board popular with hobbyists and students alike. Microcontrollers like the Arduino and Raspberry Pi are helping people learn more about computers and programming and allowing inventors to create prototypes of new devices with integrated computers."
     },
     {
         "id": 3,
-        "references": [1, 2],
-        "year": 1898,
-        "title": "Titchener and Structuralism",
-        "summary": "Titchener was a student of Wundt's who went on to Cornell University. He was inspired by the findings in chemistry and physics that molecules were made of atoms, and similarly, Titchener wanted to break down thoughts into its smallest parts, physical sensations, feelings, and memories. His idea that we could break down psychology into these parts was called structuralism, but structuralism did not last long or make much of an impact in psychology."
-    },
-    {
-        "id": 4,
-        "references": [1, 3],
-        "year": 1870,
-        "title": "William James and Functionalism",
-        "summary": "William James disagreed with Titchener's structuralism, and instead believed that physical sensations, feelings, and memories are all intertwined in our mind, and we cannot separate them as Titchener believed we could. William James focused on how we use our perception to adapt to our environments. These thoughts on psychology became known as functionalism."
+        "references": [49],
+        "imageReference": 46,
+        "year": 2010,
+        "title": "iPad",
+        "imgUrl": "app/resources/images/ipad.jpg",
+        "summary": "in 2010, Apple released the iPad. It became a big competitor to laptops and other portable computers. Since the iPad's release, many other companies have started developing their own tablets. Many tablets now come with removeable keyboards and other functions similar to laptops, causing laptop sales to decline. The introduction of tablets is changing society. Many companies are using them for business purposes. Restaurants, stores, and even pilots are using them."
     },
     {
         "id": 5,
-        "references": [1, 4],
-        "year": 1900,
-        "title": "Sigmund Freud and Psychodynamic Psychology",
-        "summary": "Sigmund Freud's ideas were drastically different from previous psychological theories due to their focus on the unconcious part of our minds. He insisted that we are driven by unconcious instincts, meaning that we may not be in full control of our behavior. No other psychologist had focused on the unconcious in this way before, and people believed that we were fully aware of our intentions and thoughts. This became the foundation of psychodynamic theory."
+        "references": [2],
+        "imageReference": 44,
+        "year": 2008,
+        "title": "Chrome",
+        "imgUrl": "app/resources/images/chrome.jpg",
+        "summary": "The Chrome internet browser came out in 2008. It is developed by Google and has become the most popular internet browser today. Since its release, the use of Internet Explorer has plummetted down to about 11% while Chrome usage has increased up to 63%."
     },
     {
         "id": 6,
-        "references": [1],
-        "year": 1960,
-        "title": "Behaviorism",
-        "summary": "John B. Watson believed that human behavior is a result of conditioning, or training, and that our thoughts and feelings are purely physical responses to conditioning. This ideology is called behaviorism. One of Watson's famous experiments was called the Little Albert experiment. He made a loud sound whenever an 11-month old baby touched a rat. This conditioned the baby to fear white, furry things, and the baby began to cry in fear whenever he saw a similar object. B.F. Skinner also believed in behaviorism and that psychology is the study of observable behaviors. Like Watson, Skinner studied conditioning, but he also studied reinforcement, or providing rewards for desired behaviors."
+        "references": [3],
+        "imageReference": 43,
+        "year": 2007,
+        "title": "iPhone",
+        "imgUrl": "app/resources/images/iphone.jpg",
+        "summary": "The Apple iPhone came out in 2007. The iPhone was a phone unlike any others on the market at the time. The ease of use to browse the internet, view emails, and play games made it an extremely popular phone. Soon after, other companies started producing their own smart phones. Each generation of smart phones introduces new capabilities, such as gps, wi-fi calling, and even fingerprint scanners. It is not just the devices that have changed society, but also the apps created for them. Apps range from games and entertainment, to productivity and business software. These apps are changing the way we live and how we manage our lives. Both Android and iOS phones now include speech recognition functionality that is improving with each release, and we will be interacting more and more with technology via voice commands instead of physical inputs. And, this all started with the iPhone."
     },
     {
         "id": 7,
-        "references": [1, 5],
-        "year": 1970,
-        "title": "Cognitive Psychology",
-        "summary": "Following behaviorism came cognitive psychology. Unlike behaviorism, cognitive psychology focused on mental processes rather than behaviors. Cognitive psychology changed the definition of psychology by including thoughts and feelings in the idea of behavior. This new field of psychology included the study of thoughts, feelings, learning, and memories."
+        "references": [4, 5],
+        "imageReference": 42,
+        "year": 2005,
+        "title": "YouTube",
+        "imgUrl": "app/resources/images/youtube.jpg",
+        "summary": "YouTube.com was created in 2005 as a video sharing site and in 2006 it was acquired by Google. YouTube is changing entertainment, communication, and advertising in society. Popular YouTube channels get enough revenue through advertising, that many people are now creating YouTube videos for their income and becoming a YouTuber as their profession. Some YouTubers are even making millions of dollars annually through ad revenue. A similar service, Twitch.tv hosts live streams of people, usually playing video games. YouTube and Twitch are changing the entertainment business and introducing a new category of professions."
     },
     {
         "id": 8,
         "references": [1, 6],
-        "year": 1980,
-        "title": "Evolutionary Psychology",
-        "summary": "Evolutionary psychology focused on how humans came to be the way we are, why we behave the way we do, and how our mental processes evolved."
+        "imageReference": 41,
+        "year": 2005,
+        "title": "Arduino",
+        "imgUrl": "app/resources/images/arduino.jpg",
+        "summary": "The Arduino was created in 2005 by Massimo Banzi, a software architect and professor, as well as several others. At the time, Banzi had to use the BASIC Stamp microcontroller with his students, but the BASIC Stamp was not powerful enough and was too expensive. This led to the development of the Arduino microcontroller which costs less and is easier to use. The Arduino now sells for about $30, and is used by hobbyists and students."
     },
     {
         "id": 9,
-        "references": [1],
-        "title": "Naturalistic Observation",
-        "summary": "Naturalistic observation is a research method used by psychologists to study the natural behavior of humans or animals. For example, psychologists might study people at school, in their workplace, or at home, and others may study wild animals in their natural habitat."
-    },
-    {
-        "id": 10,
-        "references": [1],
-        "title": "Case Study",
-        "summary": "Psychologists also use case studies for research. A case study is a focused study on one or a couple people. These studies often involve psychological tests, observation, and interviews. A lot of valuable information and research can be gained through case studies; however, they are also quite limited because we cannot create generalizations based on a single individual."
+        "references": [50],
+        "imageReference": 51,
+        "year": 2003,
+        "title": "Opteron Processor",
+        "imgUrl": "app/resources/images/opteron.jpg",
+        "summary": "AMD released the Opteron processor in 2003. The Opteron introduced personal computers to the world of 64-bit computing."
     },
     {
         "id": 11,
-        "references": [1],
-        "title": "Experiments",
-        "summary": "Psychologists also use experimental research. This research method involves using the scientific method, independent and dependent variables, and experimental groups and a control group."
+        "references": [7],
+        "imageReference": 40,
+        "year": 1999,
+        "title": "Wi Fi",
+        "imgUrl": "app/resources/images/wifi.jpg",
+        "summary": "In 1998, the Netscape browser source code was released, and the Mozilla project was started in the community to create a better browser. In 2002, when the majority of people were using Internet Explorer, the Mozilla browser was released, and in 2004, Firefox 1.0 was released. This was the first big competitor for Internet Explorer."
+    },
+    {
+        "id": 12,
+        "references": [8],
+        "imageReference": 39,
+        "year": 1998,
+        "title": "Mozilla Project",
+        "imgUrl": "app/resources/images/firefox.jpg",
+        "summary": "In 1998, the Netscape browser source code was released, and the Mozilla project was started in the community to create a better browser. In 2002, when the majority of people were using Internet Explorer, the Mozilla browser was released, and in 2004, Firefox 1.0 was released. This was the first big competitor for Internet Explorer."
+    },
+    {
+        "id": 13,
+        "references": [9, 10, 2, 11],
+        "imageReference": 38,
+        "year": 1997,
+        "title": "Google",
+        "imgUrl": "app/resources/images/google.jpg",
+        "summary": "In 1997, Google.com became a registered domain name, and in 1998 Google became a company. Google.com is now the top search engine in the world, with about 90% of people using Google over other search engines. The Google search engine has become so popular that the use of the word \"Google\" as a verb is widely used to describe searching the internet. The company Google is even concerned about trademark rights to the word \"Google\". Since then, Google has become a leader in technology and innovation, expanding beyond search engines by creating Chrome, Google Maps, self driving cars, and more."
+    },
+    {
+        "id": 14,
+        "references": [12, 13],
+        "imageReference": 37,
+        "year": 1989,
+        "title": "HTML and the Web",
+        "imgUrl": "app/resources/images/html-code.jpg",
+        "summary": "In 1989 at CERN laboratory, Tim Berners-Lee invented the Web and HTML, and in 1990, his web browser was released on the NeXT computer. Hypertext markup language was based on standard generalized markup language, or SGML. Many of the same tags used in SGML were used in HTML; however, HTML also included hypertext links with HREF attributes. The invention of the Web and HTML has completely changed society. As of early 2015, over 3 billion people used the internet."
+    },
+    {
+        "id": 15,
+        "references": [14],
+        "imageReference": 36,
+        "year": 1985,
+        "title": "First Dot-Com Domain",
+        "imgUrl": "app/resources/images/dot-com.jpg",
+        "summary": "The first dot-com domain, symbolics.com, was registered in 1985. In a way, this marks the beginning of the internet. Web pages and dot-com domains are so integral to society now."
+    },
+    {
+        "id": 16,
+        "references": [15],
+        "imageReference": 35,
+        "year": 1985,
+        "title": "Windows",
+        "imgUrl": "app/resources/images/windows-1.jpg",
+        "summary": "Microsoft released Windows in 1985 as a competitor to Apple's graphical user interface. Originally Windows was just a GUI that ran on top of MS-DOS. It evolved into the most widely used operating system today. In 2015, Windows was used on about 90% of PCs. "
+    },
+    {
+        "id": 17,
+        "references": [16],
+        "imageReference": 34,
+        "year": 1983,
+        "title": "Apple's Lisa",
+        "imgUrl": "app/resources/images/apple-lisa.jpg",
+        "summary": "In 1978, Apple started the Lisa project, and in 1983 Apple released the first personal computer with a graphical user interface. At the same time Apple was working on Lisa, they also started the Macintosh project. The Lisa had more advanced features which were later integrated into the Macintosh as well."
+    },
+    {
+        "id": 18,
+        "references": [17],
+        "imageReference": 33,
+        "year": 1981,
+        "title": "First IBM PC",
+        "imgUrl": "app/resources/images/ibm-pc.jpg",
+        "summary": "IBM was known for building massive machines that required full air conditioned rooms and a staff to maintain the computers. In 1981, IBM's first personal computer was built using existing, tested hardware and operating systems from other vendors. This strategy allowed them to create a product in only 12 months. The IBM PC allowed users at home to use word processors, play games, and more. "
+    },
+    {
+        "id": 19,
+        "references": [18, 19],
+        "imageReference": 32,
+        "year": 1979,
+        "title": "WordStar",
+        "imgUrl": "app/resources/images/wordstar.jpg",
+        "summary": "In 1979, WordStar was released as one of the first word processors. Word processing has helped to change communication and collaboration, especially in education. People could type up documents with typewriters; however, modifying documents was difficult. With the introduction of word processing, people could easily share, modify, and revise documents. This helped teachers as well as students work more efficiently."
+    },
+    {
+        "id": 20,
+        "references": [20],
+        "imageReference": 31,
+        "year": 1978,
+        "title": "VisiCalc",
+        "imgUrl": "app/resources/images/visicalc.jpg",
+        "summary": "VisiCalc is a spreadsheet application that was developed for the Apple II. It was widely used by businesses and schools, becoming a killer app that drove the sales of Apple II."
+    },
+    {
+        "id": 21,
+        "references": [20],
+        "imageReference": 29,
+        "year": 1977,
+        "title": "Apple II",
+        "imgUrl": "app/resources/images/apple-II.jpg",
+        "summary": "After the Apple I’s success, the Apple II was developed a year later to be mass produced for personal computing."
+    },
+    {
+        "id": 22,
+        "references": [21],
+        "imageReference": 30,
+        "year": 1976,
+        "title": "Apple I",
+        "imgUrl": "app/resources/images/apple-I.jpg",
+        "summary": "The first Apple computer was sold in 1976. They were originally hand built by Steve Wozniak. Other computer boards at the time had to be put together. Although the Apple I still needed a case and power supply, the board was completely assembled."
+    },
+    {
+        "id": 23,
+        "references": [22, 23, 24],
+        "imageReference": 28,
+        "year": 1969,
+        "title": "UNIX",
+        "imgUrl": "app/resources/images/unix-boot.jpg",
+        "summary": "AT&T’s Bell Laboratories developed the UNIX operating system and distributed it for free, leading to many different versions. Both Linux and Apple’s OSX are UNIX-based operating systems. The development of UNIX also led to the foundation of how computers determine time. The UNIX epoch is January 1st, 1970, and all computers now determine time by the number of seconds passed since this date."
+    },
+     {
+        "id": 24,
+        "references": [25],
+        "imageReference": 27,
+        "year": 1958,
+        "title": "Integrated Circuit",
+        "imgUrl": "app/resources/images/integrated-circuits.jpg",
+        "summary": "In 1958, two people separately came up with the idea for creating integrated circuits on a single chip. These people were Jack Kilby at Texas Instruments and Robert Noyce working at the Fairchild Semiconductor company. The invention of integrated circuits made it possible to make smaller and cheaper computer components."
     }
 ]

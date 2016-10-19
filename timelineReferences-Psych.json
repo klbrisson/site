@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "author": "Morris, G. C., & Maisto, A. A",
+        "title": "Understanding Psychology (11th ed.)",
+        "date": "2016",
+        "location": "Boston",
+        "publisher": "Pearson Education",
+        "type": "book"
+    },
+    {
+        "id": 2,
+        "author": "New World Encyclopedia",
+        "title": "Edward B. Titchener",
+        "date": "2008, August 29",
+        "url": "http://www.newworldencyclopedia.org/entry/Edward_B._Titchener",
+        "type": "internet"
+    },
+     {
+        "id": 3,
+        "author": "psychology.jrank.org",
+        "title": "William James",
+        "date": "n.d.",
+        "url": "http://psychology.jrank.org/pages/346/William-James.html",
+        "type": "internet"
+    },
+    {
+        "id": 4,
+        "author": "McLeod, S.",
+        "title": "Psychodynamic Approach",
+        "date": "2007",
+        "url": "http://www.simplypsychology.org/psychodynamic.html",
+        "type": "internet"
+    },
+    {
+        "id": 5,
+        "author": "McLeod, S.",
+        "title": "Cognitive Psychology",
+        "date": "2015",
+        "url": "http://www.simplypsychology.org/cognitive.html",
+        "type": "internet"
+    },
+    {
+        "id": 6,
+        "author": "Walter, S.",
+        "title": "Evolutionary Psychology",
+        "date": "n.d.",
+        "url": "http://www.iep.utm.edu/evol-psy/",
+        "type": "internet"
+    }
+]

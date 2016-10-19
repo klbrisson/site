@@ -1,0 +1,19 @@
+.about {
+  position: relative;
+  background-color: #fff;
+  font-size: 24px;
+  color: #787878;
+  padding: 50px 0;
+  text-align: center; }
+  .about h2 {
+    padding-top: 50px;
+    display: inline-block;
+    color: #4c6b7c;
+    border-bottom: 3px solid #ffc95e;
+    width: 172px;
+    margin: 10px auto;
+    line-height: 45px; }
+  .about p {
+    font-weight: 200; }
+
+/*# sourceMappingURL=bio.component.css.map */
