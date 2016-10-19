@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, '')));
 app.use(express.static(path.join(__dirname, 'app')));
 
 
-app.get('*', function(req, res) {
+app.all('/*', function(req, res) {
     res.render('index')
 })
 
