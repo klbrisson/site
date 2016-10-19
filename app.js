@@ -27,7 +27,7 @@ app.use(express.static(path.join(__dirname, 'app')));
 
 
 app.all('/*', function(req, res) {
-    res.sendfile('index');
+    res.sendfile('index.html');
 })
 
 
