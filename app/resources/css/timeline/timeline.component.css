@@ -1,5 +1,6 @@
 .timeline {
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
 
 .line {
   z-index: 1;

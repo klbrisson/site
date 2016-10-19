@@ -1,14 +1,15 @@
 .timelinePoint {
   position: relative;
-  display: table;
-  table-layout: fixed;
+  display: flex;
   width: 100%; }
+  .timelinePoint .even {
+    flex-wrap: wrap-reverse; }
   .timelinePoint .imgContainer {
     text-align: right;
     vertical-align: middle;
-    display: table-cell;
     padding: 50px;
-    width: 50%; }
+    width: 50%;
+    min-width: 350px; }
     .timelinePoint .imgContainer div {
       display: inline-block;
       height: 250px;
@@ -20,7 +21,7 @@
     max-height: 100%;
     max-width: 100%; }
   .timelinePoint .timelineTextContainer {
-    display: table-cell;
+    min-width: 350px;
     vertical-align: middle;
     position: relative;
     padding: 50px;
