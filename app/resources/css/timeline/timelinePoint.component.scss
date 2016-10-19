@@ -1,15 +1,30 @@
 .timelinePoint {
     position: relative;
-    display: table;
-    table-layout: fixed;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     
+    &.even {
+        flex-direction: row;
+    }
+
+
     .imgContainer {
+        z-index: 2;
         text-align: right;
         vertical-align: middle;
-        display: table-cell;
-        padding: 50px;
-        width: 50%;
+        max-width: 600px;
+        padding: 50px 30px;
+        width: 45%;
+
+        @media (max-width: 700px) {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
 
         div {
             display: inline-block;
@@ -26,12 +41,18 @@
     }
 
     .timelineTextContainer {
-        display: table-cell;
+        z-index: 2;
+        display: flex;
         vertical-align: middle;
         position: relative;
-        padding: 50px;
-        width: 50%;
-        min-height: 300px;
+        padding: 50px 50px 50px 30px;
+        width: 45%;
+        max-width: 600px;
+        
+        @media (max-width: 700px) {
+            width: 100%;
+            padding: 5px;
+        }
     }
     
     .timelineReference {
@@ -59,6 +80,7 @@
         padding: 10px;
         border: 3px solid black;
         border-radius: 10px;
+        max-width: 100%;
 
         &:hover {
             .timelineText-text {
@@ -66,34 +88,35 @@
             }
             .timelineReference {
                 display: block;
+                white-space: nowrap;
             }
         }
     }
+    @media (min-width: 701px) {
+        .timelineText:after, .timelineText:before {
+            right: 100%;
+            top: 50%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+        }
 
-    .timelineText:after, .timelineText:before {
-        right: 100%;
-        top: 50%;
-        border: solid transparent;
-        content: " ";
-        height: 0;
-        width: 0;
-        position: absolute;
-        pointer-events: none;
+        .timelineText:after {
+            border-color: rgba(255, 255, 255, 0);
+            border-right-color: #fff;
+            border-width: 15px;
+            margin-top: -15px;
+        }
+        .timelineText:before {
+            border-color: rgba(0, 0, 0, 0);
+            border-right-color: #000;
+            border-width: 19px;
+            margin-top: -19px;
+        }
     }
-
-    .timelineText:after {
-        border-color: rgba(255, 255, 255, 0);
-        border-right-color: #fff;
-        border-width: 15px;
-        margin-top: -15px;
-    }
-    .timelineText:before {
-        border-color: rgba(0, 0, 0, 0);
-        border-right-color: #000;
-        border-width: 19px;
-        margin-top: -19px;
-    }
-    
 
     h2 {
         margin-top: 0;
@@ -104,13 +127,15 @@
         line-height: 30px;
         color: #fff;
         z-index: 2;
-        position: absolute;
+       // position: absolute;
         cursor: pointer;
         left: 50%;
-        margin-left: -25px;
-        margin-top: -25px;
-        top: 50%;
-        width: 50px;
+        //margin-left: -25px;
+        //margin-top: -25px;
+        //top: 50%;
+        width: 10%;
+        max-width: 50px;
+        min-width: 50px;
         height: 50px;
         border-radius: 50%;
         overflow: hidden;
@@ -130,31 +155,43 @@
     &.even {
         .imgContainer {
             text-align: left;
+            @media (max-width: 650px) {
+                text-align: center;
+            }
         }
         
-        .timelineText:after, .timelineText:before {
-            left: 100%;
-            top: 50%;
-            border: solid transparent;
-            content: " ";
-            height: 0;
-            width: 0;
-            position: absolute;
-            pointer-events: none;
+        .timelineTextContainer {
+            padding: 50px 30px 50px 50px;
+            @media (max-width: 700px) {
+                padding: 10px;
+            }
         }
+        
+        @media (min-width: 701px) {
+            .timelineText:after, .timelineText:before {
+                left: 100%;
+                top: 50%;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+            }
 
-        .timelineText:after {
-            border-color: rgba(255, 255, 255, 0);
-            border-left-color: #fff;
-            border-width: 15px;
-            margin-top: -15px;
-        }
-        .timelineText:before {
-            border-color: rgba(0, 0, 0, 0);
-            border-left-color: #000;
-            border-width: 19px;
-            margin-top: -19px;
-        }
+            .timelineText:after {
+                border-color: rgba(255, 255, 255, 0);
+                border-left-color: #fff;
+                border-width: 15px;
+                margin-top: -15px;
+            }
+            .timelineText:before {
+                border-color: rgba(0, 0, 0, 0);
+                border-left-color: #000;
+                border-width: 19px;
+                margin-top: -19px;
+            }
+    }
     }
 }
 
@@ -173,14 +210,16 @@
             border-color:#08B491;
         }
 
-        .timelineText:before {
-            border-right-color: #08B491;
-        }
-
-        &.even {
+        @media (min-width: 701px) {
             .timelineText:before {
-                border-left-color: #08B491;
-                border-right-color: transparent;
+                border-right-color: #08B491;
+            }
+
+            &.even {
+                .timelineText:before {
+                    border-left-color: #08B491;
+                    border-right-color: transparent;
+                }
             }
         }
     }
@@ -199,14 +238,16 @@
             border-color: #FCE14F;
         }
 
-        .timelineText:before {
-            border-right-color: #FCE14F;
-        }
-
-        &.even {
+        @media (min-width: 701px) {
             .timelineText:before {
-                border-left-color: #FCE14F;
-                border-right-color: transparent;
+                border-right-color: #FCE14F;
+            }
+
+            &.even {
+                .timelineText:before {
+                    border-left-color: #FCE14F;
+                    border-right-color: transparent;
+                }
             }
         }
     }
@@ -225,14 +266,16 @@
             border-color: #FC931B;
         }
 
-        .timelineText:before {
-            border-right-color: #FC931B;
-        }
-
-        &.even {
+        @media (min-width: 701px) {
             .timelineText:before {
-                border-left-color: #FC931B;
-                border-right-color: transparent;
+                border-right-color: #FC931B;
+            }
+
+            &.even {
+                .timelineText:before {
+                    border-left-color: #FC931B;
+                    border-right-color: transparent;
+                }
             }
         }
     }
@@ -251,14 +294,16 @@
             border-color: #D94F69;
         }
 
-        .timelineText:before {
-            border-right-color: #D94F69;
-        }
-
-        &.even {
+        @media (min-width: 701px) {
             .timelineText:before {
-                border-left-color: #D94F69;
-                border-right-color: transparent;
+                border-right-color: #D94F69;
+            }
+
+            &.even {
+                .timelineText:before {
+                    border-left-color: #D94F69;
+                    border-right-color: transparent;
+                }
             }
         }
     }   
@@ -277,14 +322,16 @@
             border-color: #97D15A;
         }
 
-        .timelineText:before {
-            border-right-color: #97D15A;
-        }
-
-        &.even {
+        @media (min-width: 701px) {
             .timelineText:before {
-                border-left-color: #97D15A;
-                border-right-color: transparent;
+                border-right-color: #97D15A;
+            }
+
+            &.even {
+                .timelineText:before {
+                    border-left-color: #97D15A;
+                    border-right-color: transparent;
+                }
             }
         }
     }

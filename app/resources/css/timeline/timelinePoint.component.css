@@ -1,15 +1,25 @@
 .timelinePoint {
   position: relative;
   display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: center;
   width: 100%; }
-  .timelinePoint .even {
-    flex-wrap: wrap-reverse; }
+  .timelinePoint.even {
+    flex-direction: row; }
   .timelinePoint .imgContainer {
+    z-index: 2;
     text-align: right;
     vertical-align: middle;
-    padding: 50px;
-    width: 50%;
-    min-width: 350px; }
+    max-width: 600px;
+    padding: 50px 30px;
+    width: 45%; }
+    @media (max-width: 700px) {
+      .timelinePoint .imgContainer {
+        width: 100%;
+        text-align: center;
+        padding: 10px; } }
     .timelinePoint .imgContainer div {
       display: inline-block;
       height: 250px;
@@ -21,12 +31,17 @@
     max-height: 100%;
     max-width: 100%; }
   .timelinePoint .timelineTextContainer {
-    min-width: 350px;
+    z-index: 2;
+    display: flex;
     vertical-align: middle;
     position: relative;
-    padding: 50px;
-    width: 50%;
-    min-height: 300px; }
+    padding: 50px 50px 50px 30px;
+    width: 45%;
+    max-width: 600px; }
+    @media (max-width: 700px) {
+      .timelinePoint .timelineTextContainer {
+        width: 100%;
+        padding: 5px; } }
   .timelinePoint .timelineReference {
     display: none;
     line-height: 24px;
@@ -43,30 +58,33 @@
     background-color: white;
     padding: 10px;
     border: 3px solid black;
-    border-radius: 10px; }
+    border-radius: 10px;
+    max-width: 100%; }
     .timelinePoint .timelineText:hover .timelineText-text {
       display: none; }
     .timelinePoint .timelineText:hover .timelineReference {
-      display: block; }
-  .timelinePoint .timelineText:after, .timelinePoint .timelineText:before {
-    right: 100%;
-    top: 50%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none; }
-  .timelinePoint .timelineText:after {
-    border-color: rgba(255, 255, 255, 0);
-    border-right-color: #fff;
-    border-width: 15px;
-    margin-top: -15px; }
-  .timelinePoint .timelineText:before {
-    border-color: transparent;
-    border-right-color: #000;
-    border-width: 19px;
-    margin-top: -19px; }
+      display: block;
+      white-space: nowrap; }
+  @media (min-width: 701px) {
+    .timelinePoint .timelineText:after, .timelinePoint .timelineText:before {
+      right: 100%;
+      top: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none; }
+    .timelinePoint .timelineText:after {
+      border-color: rgba(255, 255, 255, 0);
+      border-right-color: #fff;
+      border-width: 15px;
+      margin-top: -15px; }
+    .timelinePoint .timelineText:before {
+      border-color: transparent;
+      border-right-color: #000;
+      border-width: 19px;
+      margin-top: -19px; } }
   .timelinePoint h2 {
     margin-top: 0;
     font-weight: bold; }
@@ -74,13 +92,11 @@
     line-height: 30px;
     color: #fff;
     z-index: 2;
-    position: absolute;
     cursor: pointer;
     left: 50%;
-    margin-left: -25px;
-    margin-top: -25px;
-    top: 50%;
-    width: 50px;
+    width: 10%;
+    max-width: 50px;
+    min-width: 50px;
     height: 50px;
     border-radius: 50%;
     overflow: hidden;
@@ -95,25 +111,34 @@
       left: 13px; }
   .timelinePoint.even .imgContainer {
     text-align: left; }
-  .timelinePoint.even .timelineText:after, .timelinePoint.even .timelineText:before {
-    left: 100%;
-    top: 50%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none; }
-  .timelinePoint.even .timelineText:after {
-    border-color: rgba(255, 255, 255, 0);
-    border-left-color: #fff;
-    border-width: 15px;
-    margin-top: -15px; }
-  .timelinePoint.even .timelineText:before {
-    border-color: transparent;
-    border-left-color: #000;
-    border-width: 19px;
-    margin-top: -19px; }
+    @media (max-width: 650px) {
+      .timelinePoint.even .imgContainer {
+        text-align: center; } }
+  .timelinePoint.even .timelineTextContainer {
+    padding: 50px 30px 50px 50px; }
+    @media (max-width: 700px) {
+      .timelinePoint.even .timelineTextContainer {
+        padding: 10px; } }
+  @media (min-width: 701px) {
+    .timelinePoint.even .timelineText:after, .timelinePoint.even .timelineText:before {
+      left: 100%;
+      top: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none; }
+    .timelinePoint.even .timelineText:after {
+      border-color: rgba(255, 255, 255, 0);
+      border-left-color: #fff;
+      border-width: 15px;
+      margin-top: -15px; }
+    .timelinePoint.even .timelineText:before {
+      border-color: transparent;
+      border-left-color: #000;
+      border-width: 19px;
+      margin-top: -19px; } }
 
 .timelinePoint.tl-point--teal h2 {
   color: #08B491; }
@@ -122,11 +147,12 @@
 .timelinePoint.tl-point--teal .timelineText,
 .timelinePoint.tl-point--teal .imgContainer div {
   border-color: #08B491; }
-.timelinePoint.tl-point--teal .timelineText:before {
-  border-right-color: #08B491; }
-.timelinePoint.tl-point--teal.even .timelineText:before {
-  border-left-color: #08B491;
-  border-right-color: transparent; }
+@media (min-width: 701px) {
+  .timelinePoint.tl-point--teal .timelineText:before {
+    border-right-color: #08B491; }
+  .timelinePoint.tl-point--teal.even .timelineText:before {
+    border-left-color: #08B491;
+    border-right-color: transparent; } }
 .timelinePoint.tl-point--yellow h2 {
   color: #FCE14F; }
 .timelinePoint.tl-point--yellow .timelineTick {
@@ -134,11 +160,12 @@
 .timelinePoint.tl-point--yellow .timelineText,
 .timelinePoint.tl-point--yellow .imgContainer div {
   border-color: #FCE14F; }
-.timelinePoint.tl-point--yellow .timelineText:before {
-  border-right-color: #FCE14F; }
-.timelinePoint.tl-point--yellow.even .timelineText:before {
-  border-left-color: #FCE14F;
-  border-right-color: transparent; }
+@media (min-width: 701px) {
+  .timelinePoint.tl-point--yellow .timelineText:before {
+    border-right-color: #FCE14F; }
+  .timelinePoint.tl-point--yellow.even .timelineText:before {
+    border-left-color: #FCE14F;
+    border-right-color: transparent; } }
 .timelinePoint.tl-point--orange h2 {
   color: #FC931B; }
 .timelinePoint.tl-point--orange .timelineTick {
@@ -146,11 +173,12 @@
 .timelinePoint.tl-point--orange .timelineText,
 .timelinePoint.tl-point--orange .imgContainer div {
   border-color: #FC931B; }
-.timelinePoint.tl-point--orange .timelineText:before {
-  border-right-color: #FC931B; }
-.timelinePoint.tl-point--orange.even .timelineText:before {
-  border-left-color: #FC931B;
-  border-right-color: transparent; }
+@media (min-width: 701px) {
+  .timelinePoint.tl-point--orange .timelineText:before {
+    border-right-color: #FC931B; }
+  .timelinePoint.tl-point--orange.even .timelineText:before {
+    border-left-color: #FC931B;
+    border-right-color: transparent; } }
 .timelinePoint.tl-point--pink h2 {
   color: #D94F69; }
 .timelinePoint.tl-point--pink .timelineTick {
@@ -158,11 +186,12 @@
 .timelinePoint.tl-point--pink .timelineText,
 .timelinePoint.tl-point--pink .imgContainer div {
   border-color: #D94F69; }
-.timelinePoint.tl-point--pink .timelineText:before {
-  border-right-color: #D94F69; }
-.timelinePoint.tl-point--pink.even .timelineText:before {
-  border-left-color: #D94F69;
-  border-right-color: transparent; }
+@media (min-width: 701px) {
+  .timelinePoint.tl-point--pink .timelineText:before {
+    border-right-color: #D94F69; }
+  .timelinePoint.tl-point--pink.even .timelineText:before {
+    border-left-color: #D94F69;
+    border-right-color: transparent; } }
 .timelinePoint.tl-point--green h2 {
   color: #97D15A; }
 .timelinePoint.tl-point--green .timelineTick {
@@ -170,10 +199,11 @@
 .timelinePoint.tl-point--green .timelineText,
 .timelinePoint.tl-point--green .imgContainer div {
   border-color: #97D15A; }
-.timelinePoint.tl-point--green .timelineText:before {
-  border-right-color: #97D15A; }
-.timelinePoint.tl-point--green.even .timelineText:before {
-  border-left-color: #97D15A;
-  border-right-color: transparent; }
+@media (min-width: 701px) {
+  .timelinePoint.tl-point--green .timelineText:before {
+    border-right-color: #97D15A; }
+  .timelinePoint.tl-point--green.even .timelineText:before {
+    border-left-color: #97D15A;
+    border-right-color: transparent; } }
 
 /*# sourceMappingURL=timelinePoint.component.css.map */
