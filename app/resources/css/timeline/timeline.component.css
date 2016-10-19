@@ -1,6 +1,7 @@
 .timeline {
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  background: url("app/resources/images/crossword.png"); }
 
 .line {
   z-index: 1;
