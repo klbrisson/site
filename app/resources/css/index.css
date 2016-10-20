@@ -3,5 +3,14 @@
 @import url(tech/tech.component.css);
 @import url(projects/projects.component.css);
 @import url(contact/contact.component.css);
+.loading {
+  display: flex;
+  align-items: center;
+  height: 100%; }
+  .loading .loadingIcon {
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    background-image: url("../images/loader.svg"); }
 
 /*# sourceMappingURL=index.css.map */
