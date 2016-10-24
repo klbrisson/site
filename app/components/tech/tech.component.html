@@ -1,8 +1,16 @@
 <section class="tech">
     <div class="container">
       <div class="row">
-        <div class="col-md-offset-2 col-md-8">
-            <img *ngFor="let image of images" src="app/resources/images/logos/{{image}}.png">
+        <div class="text col-md-offset-1 col-md-4">
+          <h2>Tech experience</h2>
+          <ul>
+            <li>Worked on MVC applications using C# and ASP.NET</li>
+            <li>Built interactive sites using JavaScript and jQuery</li>
+            <li>Created beautiful interfaces using front end frameworks and CSS preprocessors</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <img *ngFor="let image of images" src="app/resources/images/logos/{{image}}.png">
         </div>
       </div>
     </div>
