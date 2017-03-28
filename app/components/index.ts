@@ -7,6 +7,7 @@ export * from './contact/contact.component';
 export * from './timeline';
 export * from './nav/nav.component';
 export * from './references';
+export * from './planner/planner.component';
 
 import { IndexComponent, 
         WelcomeComponent, 
@@ -17,7 +18,8 @@ import { IndexComponent,
         TimelineComponent, 
         NavComponent, 
         ReferencesComponent, 
-        ReferenceComponent } from './';
+        ReferenceComponent,
+        PlannerComponent } from './';
 
 export const APP_COMPONENTS = [
     IndexComponent,
@@ -29,5 +31,6 @@ export const APP_COMPONENTS = [
     TimelineComponent,
     NavComponent,
     ReferencesComponent,
-    ReferenceComponent
+    ReferenceComponent,
+    PlannerComponent    
 ];

@@ -1,0 +1,30 @@
+.planner {
+  position: relative;
+  background-color: #fff;
+  font-size: 24px;
+  color: #787878;
+  padding: 75px 0;
+  text-align: center; }
+  @media (max-width: 800px) {
+    .planner {
+      padding: 50px 0; } }
+  .planner .photo {
+    margin: 0 auto;
+    border: 2px solid #ffc95e;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 125px;
+    width: 125px; }
+    .planner .photo img {
+      max-width: 100%; }
+  .planner h2 {
+    display: inline-block;
+    color: #4c6b7c;
+    border-bottom: 3px solid #ffc95e;
+    width: 172px;
+    margin: 10px auto;
+    line-height: 45px; }
+  .planner p {
+    font-weight: 200; }
+
+/*# sourceMappingURL=planner.component.css.map */

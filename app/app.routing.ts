@@ -1,6 +1,6 @@
 import { Routes, RouterModule } from '@angular/router';
 
-import { IndexComponent, TimelineComponent, ReferencesComponent } from './components';
+import { IndexComponent, TimelineComponent, ReferencesComponent, PlannerComponent } from './components';
 
 const routes: Routes = [
     {
@@ -10,6 +10,10 @@ const routes: Routes = [
     {
         path: 'timeline',
         component: TimelineComponent
+    },
+    {
+        path: 'planner',
+        component: PlannerComponent
     },
     {
         path: '',
