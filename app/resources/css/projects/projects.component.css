@@ -4,20 +4,30 @@
   font-size: 24px;
   color: #787878;
   padding: 75px 0;
-  text-align: center; }
+  text-align: left; }
   @media (max-width: 800px) {
     .projects {
       padding: 50px 0; } }
   .projects h2 {
-    display: inline-block;
     color: #4c6b7c;
     border-bottom: 3px solid #ffc95e;
     width: 172px;
     margin: 10px auto;
-    line-height: 45px; }
-  .projects p {
+    line-height: 45px;
+    text-align: center; }
+  .projects h3 {
+    color: #4c6b7c;
+    font-size: 27px; }
+  .projects p, .projects ul {
+    margin-left: 25px;
     font-weight: 200; }
-  .projects a {
+  .projects li {
     color: #ffc95e; }
+  .projects a {
+    color: #4c6b7c;
+    border-bottom: 2px solid #ffc95e;
+    text-decoration: none; }
+    .projects a:hover {
+      color: #ffc95e; }
 
 /*# sourceMappingURL=projects.component.css.map */
