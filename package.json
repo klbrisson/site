@@ -57,6 +57,10 @@
     "zone.js": "^0.8.5"
   },
   "devDependencies": {
+    "@types/core-js": "^0.9.39",
+    "@types/jasmine": "^2.5.46",
+    "@types/protractor": "^4.0.0",
+    "@types/selenium-webdriver": "^3.0.0",
     "canonical-path": "0.0.2",
     "codelyzer": "^3.0.0-beta.4",
     "concurrently": "^2.2.0",
