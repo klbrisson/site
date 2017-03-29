@@ -6,7 +6,6 @@ import { TimelinePointService, ReferencesService, APP_COMPONENTS } from './compo
     selector: 'tl-app',
     templateUrl: 'app.component.html',
     styleUrls: ['resources/css/app.component.css'],
-    directives: [APP_COMPONENTS],
     providers: [TimelinePointService, ReferencesService]
 })
 

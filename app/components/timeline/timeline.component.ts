@@ -7,8 +7,7 @@ import { ReferencesService, Reference } from '../references';
     moduleId: module.id,
     selector: 'tl-timeline',
     templateUrl: 'timeline.component.html',
-    styleUrls: ['../../resources/css/timeline/timeline.component.css'],
-    directives: [TimelinePointComponent]
+    styleUrls: ['../../resources/css/timeline/timeline.component.css']//,
 })
 export class TimelineComponent implements OnInit {
     points: TimelinePoint[];

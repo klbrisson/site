@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule  } from '@angular/platform-browser';
-import { HttpModule, HTTP_PROVIDERS } from '@angular/http';
+import { HttpModule } from '@angular/http';
 
 import { APP_COMPONENTS } from './components';
 import { AppComponent } from './app.component';
 import { APP_ROUTING } from './app.routing';
+import { ReferencesComponent } from './components/references';
+import { TimelinePointComponent } from './components/timeline';
+
 
 @NgModule({
     imports: [
@@ -12,8 +15,7 @@ import { APP_ROUTING } from './app.routing';
         HttpModule,
         APP_ROUTING,
     ],
-    declarations: [AppComponent, APP_COMPONENTS ],
-    providers: [HTTP_PROVIDERS],
+    declarations: [AppComponent, APP_COMPONENTS, ReferencesComponent, TimelinePointComponent ],
     bootstrap: [AppComponent],
 })
 export class AppModule { }

@@ -6,7 +6,6 @@ import { ReferencesService, Reference, ReferencesComponent } from '../references
     moduleId: module.id,
     selector: 'tl-event',
     templateUrl: 'timelinePoint.component.html',
-    directives: [ ReferencesComponent ],
     styleUrls: ['../../resources/css/timeline/timelinePoint.component.css', '../../resources/css/references/references.component.css']
 })
 export class TimelinePointComponent implements OnInit {

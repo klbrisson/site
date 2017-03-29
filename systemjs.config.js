@@ -17,7 +17,7 @@
   var packages = {
     'app':                        { main: 'main.js',  defaultExtension: 'js' },
     'rxjs':                       { defaultExtension: 'js' },
-    'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' },
+    //'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' },
   };
 
   var appPackages = [
@@ -62,7 +62,7 @@
   appPackages.forEach(packAppIndex);
 
   // No umd for router yet
-  packages['@angular/router'] = { main: 'index.js', defaultExtension: 'js' };
+  //packages['@angular/router'] = { main: '@angular/router.js', defaultExtension: 'js' };
 
   var config = {
     map: map,
